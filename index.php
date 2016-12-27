@@ -94,7 +94,7 @@
 	<nav class="navbar navbar-default navbar-bottom" role="navigation">
 		<div class="text-center white-text">
 				<p>
-					&copy; 2016 Budw.in
+					&copy; 2016-<?php echo gmdate('Y'); ?> Budw.in
 				</p>
 				<p>
 					<a href="https://twitter.com/dbudwin" target="_blank"><span class="ionicons ion-social-twitter" aria-hidden="true"></span></a>
