@@ -6,3 +6,15 @@ body {
 .white-text {
 	color: #ffffff;
 }
+
+ .row.extra-bottom-padding {
+   margin-bottom: 20px;
+}
+
+.navbar-bottom {
+  margin-top: 15px;
+}
+
+img {
+    padding: 15px;
+}
