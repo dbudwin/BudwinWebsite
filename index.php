@@ -87,7 +87,7 @@
                 <nav class="navbar navbar-default navbar-bottom" role="navigation">
                     <div class="text-center white-text">
                         <p>
-                            &copy; 2016-<?php echo gmdate('Y'); ?> Budw.in
+                            &copy; 2016-<?php echo gmdate('Y'); ?> Budw.in - Hosted on <a href="https://m.do.co/c/571a7acca6d1" target="_blank">DigitalOcean</a>
                         </p>
                         <p>
                             <a href="https://twitter.com/dbudwin" target="_blank"><span class="ionicons ion-social-twitter" aria-hidden="true"></span></a>
