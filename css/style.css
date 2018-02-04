@@ -1,20 +1,4 @@
 body {
-    background-image: url("../images/background.png");
-    background-color: #bcb6cf;
-}
-
-.white-text {
-	color: #ffffff;
-}
-
- .row.extra-bottom-padding {
-   margin-bottom: 20px;
-}
-
-.navbar-bottom {
-  margin-top: 15px;
-}
-
-img {
-    padding: 15px;
+    background-image: url("../images/background.jpg");
+    background-color: #252525;
 }
