@@ -53,6 +53,9 @@
                             Some technologies I regularly work with:
                             <ul>
                                 <li>
+                                    Python - <a href="https://wiki.qt.io/Qt_for_Python" class="text-info" target="_blank">PySide2</a>, <a href="https://tox.readthedocs.io/en/latest/" class="text-info"  target="_blank">tox</a>, <a href="https://gitlab.com/pycqa/flake8" class="text-info" target="_blank">flake8</a>, <a href="https://pipenv.readthedocs.io/en/latest/" class="text-info" target="_blank">Pipenv</a>, <a href="http://docs.peewee-orm.com/en/latest/" class="text-info" target="_blank">Peewee</a>
+                                </li>
+                                <li>
                                     PHP - <a href="https://laravel.com" class="text-info" target="_blank">Laravel</a>, <a href="https://phpunit.de" class="text-info"  target="_blank">PHPUnit</a>, <a href="https://github.com/mockery/mockery" class="text-info" target="_blank">Mockery</a>
                                 </li>
                                 <li>
@@ -106,6 +109,23 @@
                 <div class="col-xs-12 col-md-5">
                     <a href="https://bluecollarsoul.com" target="_blank">
                         <img src="images/BlueCollarSoulLogo.jpg" class="img-fluid rounded" alt="Blue Collar Soul">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xs-12 col-md-7 order-md-first">
+                    <h2 class="text-white">
+                        Genealogy
+                    </h2>
+                    <div class="p-3 mb-2 bg-dark text-white">
+                        <p>
+                                Genealogy is a passion of mine because it makes me feel like detective using DNA science, oral history, and combing through old dusty record to recover previously “lost” history. I currently have over 3,000 people on my family tree and adding more all the time. Through my genealogy research I have found living relatives from all over the world that I've been able to connect with and share enriching family stories.  My main research focus has been heavily focused on Sicilian genealogy records.  Lately, I've enjoyed doing DNA analysis and using science to help piece together my family history using techniques like DNA painting, X-Chromosome matching, and autosomal DNA matching.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5">
+                    <a href="https://dnapainter.com/" target="_blank">
+                        <img src="images/PaintedDNA.png" class="img-fluid" alt="My painted DNA so far">
                     </a>
                 </div>
             </div>
