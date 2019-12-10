@@ -53,6 +53,9 @@
                             Some technologies I regularly work with:
                             <ul>
                                 <li>
+                                    Python - <a href="https://wiki.qt.io/Qt_for_Python" class="text-info" target="_blank">PySide2</a>, <a href="https://tox.readthedocs.io/en/latest/" class="text-info"  target="_blank">tox</a>, <a href="https://gitlab.com/pycqa/flake8" class="text-info" target="_blank">flake8</a>, <a href="https://pipenv.readthedocs.io/en/latest/" class="text-info" target="_blank">Pipenv</a>, <a href="http://docs.peewee-orm.com/en/latest/" class="text-info" target="_blank">Peewee</a>
+                                </li>
+                                <li>
                                     PHP - <a href="https://laravel.com" class="text-info" target="_blank">Laravel</a>, <a href="https://phpunit.de" class="text-info"  target="_blank">PHPUnit</a>, <a href="https://github.com/mockery/mockery" class="text-info" target="_blank">Mockery</a>
                                 </li>
                                 <li>
