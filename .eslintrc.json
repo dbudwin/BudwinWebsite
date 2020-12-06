@@ -5,7 +5,10 @@
     },
     "extends": [
         "eslint:recommended",
+        "plugin:jest-dom/recommended",
         "plugin:react/recommended",
+        "plugin:testing-library/react",
+        "plugin:testing-library/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -17,7 +20,9 @@
         "sourceType": "module"
     },
     "plugins": [
+        "jest-dom",
         "react",
+        "testing-library",
         "@typescript-eslint"
     ],
     "rules": {
@@ -28,7 +33,10 @@
         ],
         "quotes": [
             "error",
-            "double"
+            "double",
+            {
+                "allowTemplateLiterals": true
+            }
         ],
         "semi": [
             "error",

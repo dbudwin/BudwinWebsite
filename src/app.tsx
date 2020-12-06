@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, ReactElement } from "react";
 
-class App extends Component {
-    render() {
+import AboutMe from "./sections/about-me";
+
+export default class App extends Component {
+    render(): ReactElement {
         return (
-            <div className="App">
-                <h1>Hello, World!</h1>
-            </div>
+            <AboutMe heading="Hi, I&apos;m Drew!" subHeading="I&apos;m a professional software engineer based in Virginia." />
         );
     }
 }
-
-export default App;
