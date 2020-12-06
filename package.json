@@ -36,6 +36,7 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "bulmaswatch": "^0.8.1",
     "react": "^17.0.1",
     "react-bulma-components": "^3.4.0",
     "react-dom": "^17.0.1"
