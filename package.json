@@ -31,6 +31,7 @@
     "@types/jest": "^26.0.16",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "babel-loader": "^8.2.2",
@@ -60,6 +61,7 @@
     "bulmaswatch": "^0.8.1",
     "react": "^17.0.1",
     "react-bulma-components": "^3.4.0",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   }
 }
