@@ -1,4 +1,7 @@
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
     module: {
@@ -32,7 +35,20 @@ module.exports = {
             }
         ]
     },
+    output: {
+        path: path.resolve(__dirname, "dist"),
+    },
     plugins: [
+        new HtmlWebpackPlugin({
+            inject: "body",
+            template: "src/index.ejs",
+            title: "Welcome to Budw.in",
+            meta: {
+                charset: { charset: "utf-8" },
+                viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
+            },
+        }),
+        new FaviconsWebpackPlugin("./src/images/DrewCartoonNoBackground.png"),
         new MiniCssExtractPlugin(),
     ],
     resolve: {
