@@ -7,7 +7,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import App from "./app";
-import Head from "./head";
 import React from "react";
 import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -20,7 +19,6 @@ library.add(
 
 ReactDOM.render(
     <React.Fragment>
-        <Head title="Welcome to Budw.in" />
         <App />
     </React.Fragment>,
     document.getElementById("root")
