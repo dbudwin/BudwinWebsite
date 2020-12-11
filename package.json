@@ -61,6 +61,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
+    "bulma": "^0.9.1",
     "bulmaswatch": "^0.8.1",
     "react": "^17.0.1",
     "react-bulma-components": "^3.4.0",

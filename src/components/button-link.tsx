@@ -11,7 +11,7 @@ interface ButtonLinkProps {
 
 export default function AboutMe({ url, text, icon }: ButtonLinkProps): ReactElement {
     return (
-        <a href={url} className="button is-link" target="_blank" rel="noreferrer">
+        <a href={url} className="button is-link is-info" target="_blank" rel="noreferrer">
             <span className="icon is-small">
                 <FontAwesomeIcon icon={icon} />
             </span>
