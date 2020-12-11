@@ -1,0 +1,12 @@
+// Taken and modified from: https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+// More information: https://github.com/jgthms/bulma/issues/47
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.site-content {
+    flex: 1;
+}
