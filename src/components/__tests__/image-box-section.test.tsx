@@ -1,17 +1,16 @@
 import "@testing-library/jest-dom";
 
+import { Box, Image } from "react-bulma-components";
+import React, { ReactElement } from "react";
 import { render, screen } from "@testing-library/react";
 
-import Box from "react-bulma-components/lib/components/box";
-import Image from "react-bulma-components/lib/components/image";
 import ImageBoxSection from "../image-box-section";
-import React from "react";
 import faker from "faker";
 
 let text: string;
 let imageSrc: string;
-let box: Box;
-let image: Image;
+let box: ReactElement<Box>;
+let image: ReactElement<Image>;
 
 beforeAll(() => {
     text = faker.lorem.paragraph();

@@ -1,12 +1,8 @@
+import { Box, Button, Content, Heading, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
-import Box from "react-bulma-components/lib/components/box";
-import Button from "react-bulma-components/lib/components/button";
 import ButtonLink from "../components/button-link";
-import Content from "react-bulma-components/lib/components/content";
 import DrewCartoonNoBackground from "../images/DrewCartoonNoBackground.png";
-import Heading from "react-bulma-components/lib/components/heading";
-import Image from "react-bulma-components/lib/components/image";
 import ImageBoxSection from "../components/image-box-section";
 
 interface AboutMeProps {
