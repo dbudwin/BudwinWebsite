@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows the footer with copyright message and personal links 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="content"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      © 
+      2020
+       
+      <a
+        href="https://www.budw.in/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        budw.in
+      </a>
+       - Hosted with ❤️ on 
+      <a
+        href="https://bit.ly/dbudwin-digitalocean"
+        rel="noreferrer"
+        target="_blank"
+      >
+        DigitalOcean
+      </a>
+      , secured by 
+      <a
+        href="https://letsencrypt.org/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Let's Encrypt
+      </a>
+      .
+    </div>
+    <div
+      className="content"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      <a
+        href="https://bit.ly/dbudwin-linkedin"
+        rel="noreferrer"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+       | 
+      <a
+        href="https://bit.ly/dbudwin-medium"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Medium
+      </a>
+       | 
+      <a
+        href="https://bit.ly/dbudwin-github"
+        rel="noreferrer"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+`;
