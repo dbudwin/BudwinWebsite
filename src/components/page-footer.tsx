@@ -1,6 +1,7 @@
 import { Container, Content, Footer } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
+import DadJoke from "./dad-joke";
 import SecureLink from "./secure-link";
 
 interface PageFooterProps {
@@ -16,6 +17,9 @@ export default function PageFooter({ copyrightYear }: PageFooterProps): ReactEle
                 </Content>
                 <Content style={{ textAlign: "center" }}>
                     <SecureLink url="https://bit.ly/dbudwin-linkedin" text="LinkedIn" /> | <SecureLink url="https://bit.ly/dbudwin-medium" text="Medium" /> | <SecureLink url="https://bit.ly/dbudwin-github" text="GitHub" />
+                </Content>
+                <Content style={{ textAlign: "center" }}>
+                    <DadJoke />
                 </Content>
             </Container>
         </Footer>
