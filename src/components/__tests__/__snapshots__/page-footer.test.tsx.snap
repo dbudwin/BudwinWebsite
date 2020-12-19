@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`shows the footer with copyright message and personal links 1`] = `
+exports[`shows the footer with copyright message, personal links, and dad joke 1`] = `
 <div
   className="footer"
 >
@@ -74,6 +74,16 @@ exports[`shows the footer with copyright message and personal links 1`] = `
       >
         GitHub
       </a>
+    </div>
+    <div
+      className="content"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      What do you call a pile of cats? A Meowtain.
     </div>
   </div>
 </div>
