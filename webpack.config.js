@@ -1,4 +1,3 @@
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
@@ -19,24 +18,6 @@ module.exports = {
                 test: [/\.s[ac]ss$/i],
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
-            {
-                test: /\.(png|jpg)$/i,
-                use: [
-                    "file-loader",
-                    {
-                        loader: "image-webpack-loader",
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                            },
-                            pngquant: {
-                                quality: [0.65, 0.90],
-                                speed: 4,
-                            },
-                        }
-                    },
-                ],
-            }
         ]
     },
     output: {
@@ -52,7 +33,6 @@ module.exports = {
                 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
             },
         }),
-        new FaviconsWebpackPlugin("./src/images/DrewCartoonNoBackground.png"),
         new MiniCssExtractPlugin(),
     ],
     resolve: {

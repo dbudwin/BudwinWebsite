@@ -1,5 +1,10 @@
-@import "bulmaswatch/solar/variables";
+// Commenting out the following line will cause the timeline to behave correctly
 @import "bulma";
-@import "bulmaswatch/solar/overrides";
 
-@import "layout/sticky_footer"
+@import "react-vertical-timeline-component/style.min.css";
+
+// See: https://github.com/stephane-monnot/react-vertical-timeline/issues/56
+// This doesn't seem to have any effect on my implementation
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+    display: block !important;
+}
