@@ -1,6 +1,12 @@
 import "./sass/index.scss";
 
 import {
+    faChalkboardTeacher,
+    faCode,
+    faFlask,
+    faGraduationCap
+} from "@fortawesome/free-solid-svg-icons";
+import {
     faGithub,
     faLinkedin,
     faMedium,
@@ -13,7 +19,11 @@ import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 library.add(
+    faChalkboardTeacher,
+    faCode,
+    faFlask,
     faGithub,
+    faGraduationCap,
     faLinkedin,
     faMedium,
 );

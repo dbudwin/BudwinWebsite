@@ -1,0 +1,36 @@
+.vertical-timeline {
+    padding: 0 !important;
+}
+
+// Taken from: https://github.com/stephane-monnot/react-vertical-timeline/issues/95#issuecomment-750843024
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden,
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+    display: block !important;
+}
+
+// Taken from: https://github.com/stephane-monnot/react-vertical-timeline/blob/master/docs/main.css
+.vertical-timeline.vertical-timeline-custom-line::before {
+    background: $grey-lighter;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    box-shadow: 0 0 0 4px $grey-lighter;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    background-color: $grey-dark;
+    box-shadow: 0 -4px 0 $cyan;
+}
+
+.vertical-timeline-custom-icon {
+    background: $yellow;
+    color: $grey-lighter;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
+    border-right: 10px solid $grey-dark;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    top: 1px !important;
+}

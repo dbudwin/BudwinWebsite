@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows the history timeline 1`] = `
+<section
+  className="section"
+>
+  <h1
+    className="title"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Some History
+  </h1>
+  <h1
+    className="subtitle is-5"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    A brief timeline of my relevant experience.
+  </h1>
+  <div
+    className="vertical-timeline-custom-line vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
+  >
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Software Engineer III @ FoxGuard Solutions
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Christiansburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            <ul>
+              <li>
+                Spearheaded the design, architecture, and implementation of a web-based tool to elegantly track, organize, and manage customer's critical assets. Initiated monthly review sessions with customers and stakeholders to ensure product development was meeting expectations. (Python, Django, TypeScript, React, MySQL, Docker)
+              </li>
+              <li>
+                Led development of a desktop application to help visualize patch data trends. This tool provided deep insight into a customer's patches to understand frequently vulnerable systems and applications. (Python, Qt, TypeScript, MSSQL)
+              </li>
+              <li>
+                Developed desktop applications to track, manage and report patches for critical IT and OT devices essential to national and international power grids. (Python, C#, TypeScript, SQL Server)
+              </li>
+              <li>
+                Used DevOps tools: Docker, Chef, Ansible, Azure DevOps, and Jenkins/JobDSL to migrate infrastructure to a “configuration-as-code” model.
+              </li>
+              <li>
+                Championed industry best practices with regard to standups, sprints, software design, testing, interview processes, and employee onboarding.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2015-Present
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Software Engineer @ Paymentus Corporation
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Blacksburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            <ul>
+              <li>
+                Worked with a multinational team to develop new and existing implementations for bill pay customers. (Java, Spring)
+              </li>
+              <li>
+                Assisted with managing a large Oracle database and implementations for hundreds of customers.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2015
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Software Engineer @ AVID LLC
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Blacksburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            <ul>
+              <li>
+                Lead developer for multiple phases of work with the Army Corp of Engineers’ EASEE project. (Java)
+              </li>
+              <li>
+                Lead developer on ground station software for AVID’s ducted fan vehicle EDF-8. (C++, Qt)
+              </li>
+              <li>
+                Implemented agile software and continuous integration practices to greatly increase efficiency.
+              </li>
+              <li>
+                Software lead for APEX, a medium-fidelity analysis application that predicts aircraft performance. (C++, Qt)
+              </li>
+              <li>
+                Represented AVID as an exhibitor at AUVSI in Orlando, FL.
+              </li>
+              <li>
+                Worked on multiple SBIR proposals and continuations of work.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2010-2015
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Researcher, Dept. of Computer Science
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Blacksburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            <ul>
+              <li>
+                Focused on the effect of porting pedagogy based software from DirectX to OpenGL. (C++)
+              </li>
+              <li>
+                Implemented new features to enhance functionality enabling video export to be platform independent. (C++)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2009
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Teaching Assistant, Dept. of Computer Science
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Blacksburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            <ul>
+              <li>
+                Was a TA for two semesters of CS 1114 and CS 1705 with class sizes around 30 students each.
+              </li>
+              <li>
+                Main duty was to help students with their course and lab assignments.
+              </li>
+              <li>
+                Graded homework assignments, projects, and lab work.
+              </li>
+              <li>
+                Held frequent office hours to provide one-on-one or small group support for students.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2009
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Computer Science Undergrad Student
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Blacksburg, VA
+          </h1>
+          <div
+            className="content"
+          >
+            Graduated with a bachelor's degree in Computer Science from Virginia Tech's College of Engineering with a minor in math.  Some of my relevant coursework includes two semesters of algorithms, operating system design, two semesters of computer organization, internet software development, GUI programming, comparative programming languages, discrete mathematics, and four semesters calculus.
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2007-2011
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+`;
