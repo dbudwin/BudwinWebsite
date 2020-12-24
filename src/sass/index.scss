@@ -5,6 +5,7 @@
 
 // See: https://github.com/stephane-monnot/react-vertical-timeline/issues/56
 // This doesn't seem to have any effect on my implementation
-.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden,
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
     display: block !important;
 }
