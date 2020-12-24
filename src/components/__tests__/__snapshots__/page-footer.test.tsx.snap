@@ -20,7 +20,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
        
       <a
         href="https://www.budw.in/"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         budw.in
@@ -28,7 +28,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
        - Hosted with ❤️ on 
       <a
         href="https://bit.ly/dbudwin-digitalocean"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         DigitalOcean
@@ -36,7 +36,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
       , secured by 
       <a
         href="https://letsencrypt.org/"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         Let's Encrypt
@@ -53,7 +53,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
     >
       <a
         href="https://bit.ly/dbudwin-linkedin"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         LinkedIn
@@ -61,7 +61,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
        | 
       <a
         href="https://bit.ly/dbudwin-medium"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         Medium
@@ -69,7 +69,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
        | 
       <a
         href="https://bit.ly/dbudwin-github"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         GitHub
