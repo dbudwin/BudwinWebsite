@@ -1,7 +1,8 @@
 import React, { ReactElement } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconProp } from "fortawesome/fontawesome-svg-core";
+import { SecureLink } from "react-secure-link";
 
 interface ButtonLinkProps {
     url: string;
@@ -11,11 +12,11 @@ interface ButtonLinkProps {
 
 export default function AboutMe({ url, text, icon }: ButtonLinkProps): ReactElement {
     return (
-        <a href={url} className="button is-link is-info" target="_blank" rel="noreferrer">
+        <SecureLink href={url} className="button is-link is-info">
             <span className="icon is-small">
                 <FontAwesomeIcon icon={icon} />
             </span>
             <span>{text}</span>
-        </a>
+        </SecureLink>
     );
 }

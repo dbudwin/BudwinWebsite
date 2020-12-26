@@ -13,10 +13,10 @@ export default function PageFooter({ copyrightYear }: PageFooterProps): ReactEle
         <Footer>
             <Container>
                 <Content style={{ textAlign: "center" }}>
-                    © {copyrightYear} <SecureLink url="https://www.budw.in/">budw.in</SecureLink> - Hosted with ❤️ on <SecureLink url="https://bit.ly/dbudwin-digitalocean">DigitalOcean</SecureLink>, secured by <SecureLink url="https://letsencrypt.org/">Let&apos;s Encrypt</SecureLink>.
+                    © {copyrightYear} <SecureLink href="https://www.budw.in/">budw.in</SecureLink> - Hosted with ❤️ on <SecureLink href="https://bit.ly/dbudwin-digitalocean">DigitalOcean</SecureLink>, secured by <SecureLink href="https://letsencrypt.org/">Let&apos;s Encrypt</SecureLink>.
                 </Content>
                 <Content style={{ textAlign: "center" }}>
-                    <SecureLink url="https://bit.ly/dbudwin-linkedin">LinkedIn</SecureLink> | <SecureLink url="https://bit.ly/dbudwin-medium">Medium</SecureLink> | <SecureLink url="https://bit.ly/dbudwin-github">GitHub</SecureLink>
+                    <SecureLink href="https://bit.ly/dbudwin-linkedin">LinkedIn</SecureLink> | <SecureLink href="https://bit.ly/dbudwin-medium">Medium</SecureLink> | <SecureLink href="https://bit.ly/dbudwin-github">GitHub</SecureLink>
                 </Content>
                 <Content style={{ textAlign: "center" }}>
                     <DadJoke />
