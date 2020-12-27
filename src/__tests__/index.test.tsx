@@ -1,3 +1,5 @@
+import "../test-support/mocks/vanta-mocks";
+
 function createDiv(idName: string): void {
     const footer = document.createElement("div");
     footer.setAttribute("id", idName);

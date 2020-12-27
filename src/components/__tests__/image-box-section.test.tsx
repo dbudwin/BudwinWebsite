@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom";
+import "../../test-support/mocks/vanta-mocks";
 
 import { Box, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
