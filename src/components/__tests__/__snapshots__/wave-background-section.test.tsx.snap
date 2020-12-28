@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders a wave background section 1`] = `
-<section
-  className="about-me-center-content"
-/>
+<div>
+  <section
+    className="hero make-transparent is-fullheight"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      />
+    </div>
+  </section>
+</div>
 `;
