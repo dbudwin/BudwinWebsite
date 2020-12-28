@@ -1,5 +1,7 @@
-import { Box, Columns, Content, Image, Section } from "react-bulma-components";
+import { Box, Columns, Content, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
+
+import WaveBackgroundSection from "./wave-background-section";
 
 interface ImageBoxSectionProps {
     isImageOnLeft?: boolean;
@@ -33,9 +35,9 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
 
 export default function ImageBoxSection({ isImageOnLeft, image, box }: ImageBoxSectionProps): ReactElement {
     return (
-        <Section>
+        <WaveBackgroundSection>
             {renderImageAndBox(image, box, isImageOnLeft)}
-        </Section>
+        </WaveBackgroundSection>
     );
 }
 
