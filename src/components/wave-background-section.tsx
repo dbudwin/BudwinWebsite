@@ -1,5 +1,6 @@
 import * as THREE from "three";
 
+import { Container, Hero } from "react-bulma-components";
 import React, { ReactElement, useEffect, useRef, useState } from "react";
 
 import WAVES from "vanta/dist/vanta.waves.min";
@@ -37,8 +38,14 @@ export default function WaveBackgroundSection({ ...props }: WaveBackgroundSectio
     }, [vantaEffect]);
 
     return (
-        <section id={props.id} className="about-me-center-content" ref={sectionRef}>
-            {props.children}
-        </section>
+        <div ref={sectionRef}>
+            <Hero size="fullheight" className="make-transparent">
+                <Hero.Body>
+                    <Container>
+                        {props.children}
+                    </Container>
+                </Hero.Body>
+            </Hero>
+        </div>
     );
 }
