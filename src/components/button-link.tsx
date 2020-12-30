@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "fortawesome/fontawesome-svg-core";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { SecureLink } from "react-secure-link";
 
 interface ButtonLinkProps {
