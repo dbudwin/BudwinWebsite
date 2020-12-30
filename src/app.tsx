@@ -1,6 +1,6 @@
 import React, { Component, ReactElement } from "react";
 
-import AboutMe from "./sections/about-me";
+import AboutMe from "./components/sections/about-me";
 
 export default class App extends Component {
     render(): ReactElement {

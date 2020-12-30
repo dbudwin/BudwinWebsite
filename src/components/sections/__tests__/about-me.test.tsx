@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom";
-import "../../test-support/mocks/vanta-mocks";
+import "../../../test-support/mocks/vanta-mocks";
 
 import { render, screen } from "@testing-library/react";
 
@@ -7,7 +7,7 @@ import AboutMe from "../about-me";
 import React from "react";
 import faker from "faker";
 
-jest.mock("../../images/DrewCartoonNoBackground.png", () => "test.png");
+jest.mock("../../../images/DrewCartoonNoBackground.png", () => "test.png");
 
 let heading: string;
 let subHeading: string;
