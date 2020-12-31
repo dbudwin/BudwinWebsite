@@ -39,7 +39,7 @@ export default function WaveBackgroundSection({ ...props }: WaveBackgroundSectio
 
     return (
         <div id={props.id} ref={sectionRef}>
-            <Hero size="fullheight" className="make-transparent">
+            <Hero hasNavbar className="make-transparent">
                 <Hero.Body>
                     <Container>
                         {props.children}

@@ -1,0 +1,17 @@
+.navbar {
+    font-size: 1.1em;
+    border-radius: 0px;
+    box-shadow: 0 $border-width 0 $grey-darker;
+}
+
+.navbar-item {
+    &.active {
+        color: $navbar-item-active-color;
+        background-color: $cyan;
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: $cyan;
+        }
+    }
+}

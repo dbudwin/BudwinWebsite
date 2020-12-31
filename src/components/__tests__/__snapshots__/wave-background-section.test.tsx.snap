@@ -3,7 +3,7 @@
 exports[`renders a wave background section 1`] = `
 <div>
   <section
-    className="hero make-transparent is-fullheight"
+    className="hero make-transparent is-fullheight-with-navbar"
   >
     <div
       className="hero-body"
