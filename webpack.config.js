@@ -12,7 +12,11 @@ module.exports = {
                 use: ["babel-loader"]
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.css?$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
+            },
+            {
+                test: [/\.s[ac]ss$/i],
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
             {
@@ -52,7 +56,15 @@ module.exports = {
         new MiniCssExtractPlugin(),
     ],
     resolve: {
-        extensions: [".js", ".jsx", ".ts", ".tsx", ".jpg", ".png"],
+        extensions: [
+            ".css",
+            ".jpg",
+            ".js",
+            ".jsx",
+            ".png",
+            ".ts",
+            ".tsx",
+        ],
         modules: ["node_modules", "src/sass"],
     },
 };

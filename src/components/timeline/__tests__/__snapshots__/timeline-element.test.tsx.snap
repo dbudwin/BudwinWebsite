@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a single element in the timeline 1`] = `
+<div
+  className="vertical-timeline-element"
+  id=""
+  style={null}
+>
+  <span
+    className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+    onClick={null}
+    style={null}
+  >
+    <i
+      className="fa"
+    />
+  </span>
+  <div
+    className="vertical-timeline-element-content is-hidden"
+    onClick={null}
+    style={null}
+  >
+    <div
+      className="vertical-timeline-element-content-arrow"
+      style={null}
+    />
+    <div
+      className="box"
+    >
+      <h1
+        className="title is-4"
+      >
+        Foo
+      </h1>
+      <h1
+        className="subtitle is-6"
+      >
+        Bar
+      </h1>
+      <div
+        className="content"
+      >
+        Hello World
+      </div>
+    </div>
+    <span
+      className="is-size-5 vertical-timeline-element-date"
+    >
+      2020
+    </span>
+  </div>
+</div>
+`;
