@@ -38,7 +38,7 @@ export default function WaveBackgroundSection({ ...props }: WaveBackgroundSectio
     }, [vantaEffect]);
 
     return (
-        <div ref={sectionRef}>
+        <div id={props.id} ref={sectionRef}>
             <Hero size="fullheight" className="make-transparent">
                 <Hero.Body>
                     <Container>

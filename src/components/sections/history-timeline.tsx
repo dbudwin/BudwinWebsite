@@ -6,9 +6,11 @@ import React, { ReactElement } from "react";
 import TimelineElement from "../timeline/timeline-element";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
-export default function HistoryTimeline(): ReactElement {
+type HistoryTimelineProps = React.HTMLAttributes<HTMLDivElement>;
+
+export default function HistoryTimeline({ ...props }: HistoryTimelineProps): ReactElement {
     return (
-        <Section>
+        <Section id={props.id}>
             <Heading style={{ textAlign: "center" }}>Some History</Heading>
             <Heading subtitle size={5} style={{ textAlign: "center" }}>A brief timeline of my relevant experience.</Heading>
             <VerticalTimeline className="vertical-timeline-custom-line">
