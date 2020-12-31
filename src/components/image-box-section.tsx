@@ -1,4 +1,4 @@
-import { Box, Columns, Content, Image } from "react-bulma-components";
+import { Box, Columns, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
 import WaveBackgroundSection from "./wave-background-section";
@@ -13,21 +13,17 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
     const imageColumnSize = "one-third";
 
     return (
-        <Columns>
+        <Columns className="is-vcentered">
             {isImageOnLeft &&
                 <Columns.Column size={imageColumnSize}>
-                    <Content>
-                        {image}
-                    </Content>
+                    {image}
                 </Columns.Column>}
             <Columns.Column>
                 {box}
             </Columns.Column>
             {!isImageOnLeft &&
                 <Columns.Column size={imageColumnSize}>
-                    <Content>
-                        {image}
-                    </Content>
+                    {image}
                 </Columns.Column>}
         </Columns>
     );

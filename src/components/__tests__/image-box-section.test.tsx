@@ -33,7 +33,7 @@ function expectBoxToExist(boxNode: ChildNode | null | undefined): void {
 function getColumnElement(): HTMLElement | null | undefined {
     const figure = screen.getByRole("figure");
 
-    return figure.parentElement?.parentElement?.parentElement;
+    return figure.parentElement?.parentElement;
 }
 
 describe("when isImageOnLeft is true", () => {
@@ -47,7 +47,7 @@ describe("when isImageOnLeft is true", () => {
         );
 
         const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.firstChild?.firstChild?.firstChild;
+        const traverseDomToFigure = columnElement?.firstChild?.firstChild;
 
         expectFigureToExist(traverseDomToFigure);
     });
@@ -79,7 +79,7 @@ describe("when isImageOnLeft is false", () => {
         );
 
         const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.children[1].firstChild?.firstChild;
+        const traverseDomToFigure = columnElement?.children[1].firstChild;
 
         expectFigureToExist(traverseDomToFigure);
     });
