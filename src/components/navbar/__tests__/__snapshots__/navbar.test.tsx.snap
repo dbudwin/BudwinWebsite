@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates the navbar 1`] = `
+<nav
+  className="navbar is-fixed-top"
+  role="navigation"
+>
+  <div
+    className="navbar-brand"
+  >
+    <a
+      className="navbar-item"
+      onClick={[Function]}
+      role="home"
+    >
+      <i
+        className="fa"
+      />
+    </a>
+    <div
+      className="navbar-burger"
+      onClick={[Function]}
+      role="button"
+      style={
+        Object {
+          "outline": "none",
+        }
+      }
+      tabIndex="0"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+  </div>
+  <div
+    className="navbar-menu"
+  >
+    <div
+      className="navbar-start"
+    >
+      <a
+        className="navbar-item"
+        onClick={[Function]}
+      >
+        About Me
+      </a>
+      <a
+        className="navbar-item"
+        onClick={[Function]}
+      >
+        History
+      </a>
+    </div>
+  </div>
+</nav>
+`;
