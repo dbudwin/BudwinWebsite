@@ -1,8 +1,6 @@
 import { Box, Columns, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
-import WaveBackgroundSection from "./wave-background-section";
-
 interface ImageBoxSectionProps extends React.HTMLAttributes<HTMLDivElement> {
     isImageOnLeft?: boolean;
     image: ReactElement<Image>;
@@ -29,11 +27,9 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
     );
 }
 
-export default function ImageBoxSection({ isImageOnLeft, image, box, ...props }: ImageBoxSectionProps): ReactElement {
+export default function ImageBoxSection({ isImageOnLeft, image, box }: ImageBoxSectionProps): ReactElement {
     return (
-        <WaveBackgroundSection id={props.id}>
-            {renderImageAndBox(image, box, isImageOnLeft)}
-        </WaveBackgroundSection>
+        renderImageAndBox(image, box, isImageOnLeft)
     );
 }
 

@@ -10,10 +10,9 @@ interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
     subHeading: string;
 }
 
-export default function AboutMe({ heading, subHeading, ...props }: AboutMeProps): ReactElement {
+export default function AboutMe({ heading, subHeading }: AboutMeProps): ReactElement {
     return (
         <ImageBoxSection
-            id={props.id}
             image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
             box={
                 <Box>
