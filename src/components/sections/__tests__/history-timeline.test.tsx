@@ -5,7 +5,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 it("shows the history timeline", () => {
-    const footer = renderer.create(<HistoryTimeline />).toJSON();
+    const historyTimeline = renderer.create(<HistoryTimeline />).toJSON();
 
-    expect(footer).toMatchSnapshot();
+    expect(historyTimeline).toMatchSnapshot();
 });

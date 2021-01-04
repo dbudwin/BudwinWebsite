@@ -5,7 +5,7 @@ import { Box, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 import { render, screen } from "@testing-library/react";
 
-import ImageBoxSection from "../image-box-section";
+import ImageBoxRow from "../image-box-row";
 import faker from "faker";
 
 let text: string;
@@ -33,13 +33,13 @@ function expectBoxToExist(boxNode: ChildNode | null | undefined): void {
 function getColumnElement(): HTMLElement | null | undefined {
     const figure = screen.getByRole("figure");
 
-    return figure.parentElement?.parentElement?.parentElement;
+    return figure.parentElement?.parentElement;
 }
 
 describe("when isImageOnLeft is true", () => {
     it("shows image on left", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
                 image={image}
@@ -47,14 +47,14 @@ describe("when isImageOnLeft is true", () => {
         );
 
         const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.firstChild?.firstChild?.firstChild;
+        const traverseDomToFigure = columnElement?.firstChild?.firstChild;
 
         expectFigureToExist(traverseDomToFigure);
     });
 
     it("shows box on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
                 image={image}
@@ -71,7 +71,7 @@ describe("when isImageOnLeft is true", () => {
 describe("when isImageOnLeft is false", () => {
     it("shows image on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
                 image={image}
@@ -79,14 +79,14 @@ describe("when isImageOnLeft is false", () => {
         );
 
         const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.children[1].firstChild?.firstChild;
+        const traverseDomToFigure = columnElement?.children[1].firstChild;
 
         expectFigureToExist(traverseDomToFigure);
     });
 
     it("shows box on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
                 image={image}

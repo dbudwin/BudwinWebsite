@@ -1,9 +1,7 @@
-import { Box, Columns, Content, Image } from "react-bulma-components";
+import { Box, Columns, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
-import WaveBackgroundSection from "./wave-background-section";
-
-interface ImageBoxSectionProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ImageBoxRowProps extends React.HTMLAttributes<HTMLDivElement> {
     isImageOnLeft?: boolean;
     image: ReactElement<Image>;
     box: ReactElement<Box>;
@@ -13,34 +11,28 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
     const imageColumnSize = "one-third";
 
     return (
-        <Columns>
+        <Columns className="is-vcentered">
             {isImageOnLeft &&
                 <Columns.Column size={imageColumnSize}>
-                    <Content>
-                        {image}
-                    </Content>
+                    {image}
                 </Columns.Column>}
             <Columns.Column>
                 {box}
             </Columns.Column>
             {!isImageOnLeft &&
                 <Columns.Column size={imageColumnSize}>
-                    <Content>
-                        {image}
-                    </Content>
+                    {image}
                 </Columns.Column>}
         </Columns>
     );
 }
 
-export default function ImageBoxSection({ isImageOnLeft, image, box, ...props }: ImageBoxSectionProps): ReactElement {
+export default function ImageBoxRow({ isImageOnLeft, image, box }: ImageBoxRowProps): ReactElement {
     return (
-        <WaveBackgroundSection id={props.id}>
-            {renderImageAndBox(image, box, isImageOnLeft)}
-        </WaveBackgroundSection>
+        renderImageAndBox(image, box, isImageOnLeft)
     );
 }
 
-ImageBoxSection.defaultProps = {
+ImageBoxRow.defaultProps = {
     isImageOnLeft: true,
 };

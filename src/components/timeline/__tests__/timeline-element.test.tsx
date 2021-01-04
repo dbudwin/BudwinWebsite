@@ -5,7 +5,7 @@ import TimelineElement from "../timeline-element";
 import renderer from "react-test-renderer";
 
 it("renders a single element in the timeline", () => {
-    const footer = renderer.create(
+    const timelineElement = renderer.create(
         <TimelineElement
             header="Foo"
             subtitle="Bar"
@@ -16,5 +16,5 @@ it("renders a single element in the timeline", () => {
         </TimelineElement>
     ).toJSON();
 
-    expect(footer).toMatchSnapshot();
+    expect(timelineElement).toMatchSnapshot();
 });

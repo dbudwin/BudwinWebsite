@@ -3,17 +3,16 @@ import React, { ReactElement } from "react";
 
 import ButtonLink from "../button-link";
 import DrewCartoonNoBackground from "../../images/DrewCartoonNoBackground.png";
-import ImageBoxSection from "../image-box-section";
+import ImageBoxRow from "../image-box-row";
 
 interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
     heading: string;
     subHeading: string;
 }
 
-export default function AboutMe({ heading, subHeading, ...props }: AboutMeProps): ReactElement {
+export default function AboutMe({ heading, subHeading }: AboutMeProps): ReactElement {
     return (
-        <ImageBoxSection
-            id={props.id}
+        <ImageBoxRow
             image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
             box={
                 <Box>
