@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 
 import ButtonLink from "../button-link";
 import DrewCartoonNoBackground from "../../images/DrewCartoonNoBackground.png";
-import ImageBoxSection from "../image-box-section";
+import ImageBoxRow from "../image-box-row";
 
 interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
     heading: string;
@@ -12,7 +12,7 @@ interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export default function AboutMe({ heading, subHeading }: AboutMeProps): ReactElement {
     return (
-        <ImageBoxSection
+        <ImageBoxRow
             image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
             box={
                 <Box>

@@ -5,7 +5,7 @@ import { Box, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 import { render, screen } from "@testing-library/react";
 
-import ImageBoxSection from "../image-box-section";
+import ImageBoxRow from "../image-box-row";
 import faker from "faker";
 
 let text: string;
@@ -39,7 +39,7 @@ function getColumnElement(): HTMLElement | null | undefined {
 describe("when isImageOnLeft is true", () => {
     it("shows image on left", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
                 image={image}
@@ -54,7 +54,7 @@ describe("when isImageOnLeft is true", () => {
 
     it("shows box on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
                 image={image}
@@ -71,7 +71,7 @@ describe("when isImageOnLeft is true", () => {
 describe("when isImageOnLeft is false", () => {
     it("shows image on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
                 image={image}
@@ -86,7 +86,7 @@ describe("when isImageOnLeft is false", () => {
 
     it("shows box on right", () => {
         render(
-            <ImageBoxSection
+            <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
                 image={image}

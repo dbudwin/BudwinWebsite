@@ -1,7 +1,7 @@
 import { Box, Columns, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
 
-interface ImageBoxSectionProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ImageBoxRowProps extends React.HTMLAttributes<HTMLDivElement> {
     isImageOnLeft?: boolean;
     image: ReactElement<Image>;
     box: ReactElement<Box>;
@@ -27,12 +27,12 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
     );
 }
 
-export default function ImageBoxSection({ isImageOnLeft, image, box }: ImageBoxSectionProps): ReactElement {
+export default function ImageBoxRow({ isImageOnLeft, image, box }: ImageBoxRowProps): ReactElement {
     return (
         renderImageAndBox(image, box, isImageOnLeft)
     );
 }
 
-ImageBoxSection.defaultProps = {
+ImageBoxRow.defaultProps = {
     isImageOnLeft: true,
 };
