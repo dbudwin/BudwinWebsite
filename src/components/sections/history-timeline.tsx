@@ -19,6 +19,7 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
                     subtitle="Christiansburg, VA"
                     date="2015-Present"
                     icon={["fas", "code"]}
+                    tags={["Python", "React", "TypeScript", "Docker", "C#", "Qt"]}
                 >
                     <ul>
                         <li>Spearheaded the design, architecture, and implementation of a web-based tool to elegantly track, organize, and manage customer&apos;s critical assets. Initiated monthly review sessions with customers and stakeholders to ensure product development was meeting expectations. (Python, Django, TypeScript, React, MySQL, Docker)</li>
@@ -33,6 +34,7 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
                     subtitle="Blacksburg, VA"
                     date="2015"
                     icon={["fas", "code"]}
+                    tags={["Java", "Spring", "Oracle"]}
                 >
                     <ul>
                         <li>Worked with a multinational team to develop new and existing implementations for bill pay customers. (Java, Spring)</li>
@@ -44,6 +46,7 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
                     subtitle="Blacksburg, VA"
                     date="2010-2015"
                     icon={["fas", "code"]}
+                    tags={["C++", "Qt", "Java"]}
                 >
                     <ul>
                         <li>Lead developer for multiple phases of work with the Army Corp of Engineers’ EASEE project. (Java)</li>
@@ -59,6 +62,7 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
                     subtitle="Blacksburg, VA"
                     date="2009"
                     icon={["fas", "flask"]}
+                    tags={["C++"]}
                 >
                     <ul>
                         <li>Focused on the effect of porting pedagogy based software from DirectX to OpenGL. (C++)</li>
@@ -70,6 +74,7 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
                     subtitle="Blacksburg, VA"
                     date="2009"
                     icon={["fas", "chalkboard-teacher"]}
+                    tags={["Java"]}
                 >
                     <ul>
                         <li>Was a TA for two semesters of CS 1114 and CS 1705 with class sizes around 30 students each.</li>
