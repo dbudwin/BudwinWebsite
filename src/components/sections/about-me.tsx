@@ -23,7 +23,7 @@ export default function AboutMe({ heading, subHeading }: AboutMeProps): ReactEle
                         {subHeading}
                     </Heading>
                     <Content>
-                        You&apos;ve somehow stumbled onto this corner of the internet. Not a whole lot goes on here, it&apos;s mainly just used for managing my family&apos;s email along with being a playground for web development software, like this page made using React & TypeScript. But since you&apos;re here, I figured I&apos;d put up some content to help spruce things up a little bit. By trade I&apos;m a software engineer, but I also have a passion for woodworking as a side job. I&apos;m also known to be a collector of hobbies which has led me to have wide and varied interests.
+                        You&apos;ve somehow stumbled onto this corner of the internet. Not a whole lot goes on here, it&apos;s mainly just used for managing my family&apos;s email along with being a playground for web development software, like this page made using React & TypeScript. But since you&apos;re here, I figured I&apos;d put up some content to help spruce things up a little bit. By trade I&apos;m a software engineer with over a decade of professional experience.
                     </Content>
                     <Content>
                         If you would like to contact me about job opportunities or partnerships, please do so by contacting me on LinkedIn.

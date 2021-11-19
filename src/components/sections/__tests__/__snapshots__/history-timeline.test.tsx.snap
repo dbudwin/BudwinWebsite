@@ -66,6 +66,40 @@ exports[`shows the history timeline 1`] = `
           <div
             className="content"
           >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                Python
+              </span>
+              <span
+                className="tag is-info"
+              >
+                React
+              </span>
+              <span
+                className="tag is-info"
+              >
+                TypeScript
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Docker
+              </span>
+              <span
+                className="tag is-info"
+              >
+                C#
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Qt
+              </span>
+            </span>
             <ul>
               <li>
                 Spearheaded the design, architecture, and implementation of a web-based tool to elegantly track, organize, and manage customer's critical assets. Initiated monthly review sessions with customers and stakeholders to ensure product development was meeting expectations. (Python, Django, TypeScript, React, MySQL, Docker)
@@ -131,6 +165,25 @@ exports[`shows the history timeline 1`] = `
           <div
             className="content"
           >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                Java
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Spring
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Oracle
+              </span>
+            </span>
             <ul>
               <li>
                 Worked with a multinational team to develop new and existing implementations for bill pay customers. (Java, Spring)
@@ -187,6 +240,25 @@ exports[`shows the history timeline 1`] = `
           <div
             className="content"
           >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                C++
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Qt
+              </span>
+              <span
+                className="tag is-info"
+              >
+                Java
+              </span>
+            </span>
             <ul>
               <li>
                 Lead developer for multiple phases of work with the Army Corp of Engineers’ EASEE project. (Java)
@@ -255,6 +327,15 @@ exports[`shows the history timeline 1`] = `
           <div
             className="content"
           >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                C++
+              </span>
+            </span>
             <ul>
               <li>
                 Focused on the effect of porting pedagogy based software from DirectX to OpenGL. (C++)
@@ -311,6 +392,15 @@ exports[`shows the history timeline 1`] = `
           <div
             className="content"
           >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                Java
+              </span>
+            </span>
             <ul>
               <li>
                 Was a TA for two semesters of CS 1114 and CS 1705 with class sizes around 30 students each.
