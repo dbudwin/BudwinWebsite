@@ -15,9 +15,21 @@ export default function HistoryTimeline({ ...props }: HistoryTimelineProps): Rea
             <Heading subtitle size={5} style={{ textAlign: "center" }}>A brief timeline of my relevant experience.</Heading>
             <VerticalTimeline className="vertical-timeline-custom-line">
                 <TimelineElement
+                    header="Senior Platform Engineer @ Voice"
+                    subtitle="Remote (Brooklyn, NY Headquarters)"
+                    date="2021-Present"
+                    icon={["fas", "code"]}
+                    tags={["TypeScript", "GraphQL"]}
+                >
+                    <ul>
+                        <li>Work with a multinational team on the creation aspect of NFTs, like minting, editions, and co-creation.</li>
+                        <li>Helped transition from a social media platform to an NFT platform.</li>
+                    </ul>
+                </TimelineElement>
+                <TimelineElement
                     header="Software Engineer III @ FoxGuard Solutions"
                     subtitle="Christiansburg, VA"
-                    date="2015-Present"
+                    date="2015-2021"
                     icon={["fas", "code"]}
                     tags={["Python", "React", "TypeScript", "Docker", "C#", "Qt"]}
                 >
