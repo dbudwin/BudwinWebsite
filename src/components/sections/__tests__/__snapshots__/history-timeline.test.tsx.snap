@@ -56,6 +56,76 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
+            Senior Platform Engineer @ Voice
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            Remote (Brooklyn, NY Headquarters)
+          </h1>
+          <div
+            className="content"
+          >
+            <span
+              className="tags"
+            >
+              <span
+                className="tag is-info"
+              >
+                TypeScript
+              </span>
+              <span
+                className="tag is-info"
+              >
+                GraphQL
+              </span>
+            </span>
+            <ul>
+              <li>
+                Work with a multinational team on the creation aspect of NFTs, like minting, editions, and co-creation.
+              </li>
+              <li>
+                Helped transition from a social media platform to an NFT platform.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2021-Present
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <i
+          className="fa"
+        />
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
             Software Engineer III @ FoxGuard Solutions
           </h1>
           <h1
@@ -122,7 +192,7 @@ exports[`shows the history timeline 1`] = `
         <span
           className="is-size-5 vertical-timeline-element-date"
         >
-          2015-Present
+          2015-2021
         </span>
       </div>
     </div>
