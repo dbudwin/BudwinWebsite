@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`shows the footer with copyright message, personal links, and dad joke 1`] = `
-<div
+<footer
   className="footer"
 >
   <div
@@ -10,7 +10,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
     <div
       className="content"
       style={
-        Object {
+        {
           "textAlign": "center",
         }
       }
@@ -46,7 +46,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
     <div
       className="content"
       style={
-        Object {
+        {
           "textAlign": "center",
         }
       }
@@ -78,7 +78,7 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
     <div
       className="content"
       style={
-        Object {
+        {
           "textAlign": "center",
         }
       }
@@ -86,5 +86,5 @@ exports[`shows the footer with copyright message, personal links, and dad joke 1
       What do you call a pile of cats? A Meowtain.
     </div>
   </div>
-</div>
+</footer>
 `;

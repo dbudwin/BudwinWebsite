@@ -22,7 +22,7 @@ exports[`creates the navbar 1`] = `
       onClick={[Function]}
       role="hamburgerButton"
       style={
-        Object {
+        {
           "outline": "none",
         }
       }
@@ -44,6 +44,7 @@ exports[`creates the navbar 1`] = `
         className="navbar-item"
         onClick={[Function]}
         role="menuLink"
+        style={{}}
       >
         About Me
       </a>
@@ -51,6 +52,7 @@ exports[`creates the navbar 1`] = `
         className="navbar-item"
         onClick={[Function]}
         role="menuLink"
+        style={{}}
       >
         History
       </a>

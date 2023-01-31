@@ -3,11 +3,11 @@ import React, { ReactElement } from "react";
 
 interface ImageBoxRowProps extends React.HTMLAttributes<HTMLDivElement> {
     isImageOnLeft?: boolean;
-    image: ReactElement<Image>;
-    box: ReactElement<Box>;
+    image: ReactElement<typeof Image>;
+    box: ReactElement<typeof Box>;
 }
 
-function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, isImageOnLeft?: boolean): ReactElement {
+export default function ImageBoxRow({ isImageOnLeft, image, box }: ImageBoxRowProps): ReactElement {
     const imageColumnSize = "one-third";
 
     return (
@@ -24,12 +24,6 @@ function renderImageAndBox(image: ReactElement<Image>, box: ReactElement<Box>, i
                     {image}
                 </Columns.Column>}
         </Columns>
-    );
-}
-
-export default function ImageBoxRow({ isImageOnLeft, image, box }: ImageBoxRowProps): ReactElement {
-    return (
-        renderImageAndBox(image, box, isImageOnLeft)
     );
 }
 

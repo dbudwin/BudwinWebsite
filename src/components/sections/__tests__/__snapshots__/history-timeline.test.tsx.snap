@@ -7,7 +7,7 @@ exports[`shows the history timeline 1`] = `
   <h1
     className="title"
     style={
-      Object {
+      {
         "textAlign": "center",
       }
     }
@@ -17,7 +17,7 @@ exports[`shows the history timeline 1`] = `
   <h1
     className="subtitle is-5"
     style={
-      Object {
+      {
         "textAlign": "center",
       }
     }

@@ -5,9 +5,12 @@ import React, { ReactElement, useEffect, useRef, useState } from "react";
 
 import WAVES from "vanta/dist/vanta.waves.min";
 
-type WaveBackgroundSectionProps = React.HTMLAttributes<HTMLDivElement>;
+type WaveBackgroundSectionProps = {
+    id: string
+    children: JSX.Element
+}
 
-export default function WaveBackgroundSection({ ...props }: WaveBackgroundSectionProps): ReactElement {
+export default function WaveBackgroundSection({ id, children }: WaveBackgroundSectionProps): ReactElement {
     const [vantaEffect, setVantaEffect] = useState(0);
     const sectionRef = useRef(null);
 
@@ -39,11 +42,11 @@ export default function WaveBackgroundSection({ ...props }: WaveBackgroundSectio
     }, [vantaEffect]);
 
     return (
-        <div id={props.id} ref={sectionRef}>
+        <div id={id} ref={sectionRef}>
             <Hero hasNavbar className="make-transparent">
                 <Hero.Body>
                     <Container>
-                        {props.children}
+                        {children}
                     </Container>
                 </Hero.Body>
             </Hero>

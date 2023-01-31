@@ -15,8 +15,14 @@ import {
 import App from "./app";
 import PageFooter from "./components/page-footer";
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
+const rootContainer = document.getElementById("root");
+const root = createRoot(rootContainer!);
+
+const footerContainer = document.getElementById("footer");
+const footer = createRoot(footerContainer!);
 
 library.add(
     faChalkboardTeacher,
@@ -28,5 +34,5 @@ library.add(
     faMedium,
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
-ReactDOM.render(<PageFooter copyrightYear={new Date().getFullYear()} />, document.getElementById("footer"));
+root.render(<App />);
+footer.render(<PageFooter copyrightYear={new Date().getFullYear()} />);

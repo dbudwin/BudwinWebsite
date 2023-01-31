@@ -14,7 +14,7 @@ it("creates the navbar", () => {
     expect(navbar).toMatchSnapshot();
 });
 
-it("calls function to scroll to top when the home link is clicked", () => {
+it("calls function to scroll to top when the home link is clicked", async () => {
     const mockScrollToTop = jest.fn();
 
     animateScroll.scrollToTop = mockScrollToTop;
@@ -23,7 +23,7 @@ it("calls function to scroll to top when the home link is clicked", () => {
 
     const homeLink = screen.getByRole("home");
 
-    userEvent.click(homeLink);
+    await userEvent.click(homeLink);
 
     expect(mockScrollToTop).toHaveBeenCalledTimes(1);
 });
@@ -37,19 +37,19 @@ function getMenu(): HTMLElement {
 }
 
 describe("when clicking the hamburger menu button", () => {
-    it(`adds "is-active" class to hamburger menu button`, () => {
+    it(`adds "is-active" class to hamburger menu button`, async () => {
         render(<Navbar />);
 
         const hamburgerMenuButton = getHamburgerMenuButton();
 
         expect(hamburgerMenuButton).not.toHaveClass("is-active");
 
-        userEvent.click(hamburgerMenuButton);
+        await userEvent.click(hamburgerMenuButton);
 
         expect(hamburgerMenuButton).toHaveClass("is-active");
     });
 
-    it(`adds "is-active" class to menu`, () => {
+    it(`adds "is-active" class to menu`, async () => {
         render(<Navbar />);
 
         const hamburgerMenuButton = getHamburgerMenuButton();
@@ -57,7 +57,7 @@ describe("when clicking the hamburger menu button", () => {
 
         expect(menu).not.toHaveClass("is-active");
 
-        userEvent.click(hamburgerMenuButton);
+        await userEvent.click(hamburgerMenuButton);
 
         expect(menu).toHaveClass("is-active");
     });
@@ -70,31 +70,32 @@ describe("when clicking menu link in open hamburger menu", () => {
         return menuLinks[Math.floor(Math.random() * menuLinks.length)];
     }
 
-    it(`removes "is-active" class from hamburger menu button`, () => {
-        render(<Navbar />);
-
-        const hamburgerMenuButton = getHamburgerMenuButton();
-
-        userEvent.click(hamburgerMenuButton);
-
-        expect(hamburgerMenuButton).toHaveClass("is-active");
-
-        userEvent.click(getRandomMenuLink());
-
-        expect(hamburgerMenuButton).not.toHaveClass("is-active");
-    });
-
-    it(`removes "is-active" class from menu`, () => {
+    it(`removes "is-active" class from hamburger menu button`, async () => {
         render(<Navbar />);
 
         const hamburgerMenuButton = getHamburgerMenuButton();
         const menu = getMenu();
 
-        userEvent.click(hamburgerMenuButton);
+        await userEvent.click(hamburgerMenuButton);
 
         expect(menu).toHaveClass("is-active");
 
-        userEvent.click(getRandomMenuLink());
+        await userEvent.click(getRandomMenuLink());
+
+        expect(menu).not.toHaveClass("is-active");
+    });
+
+    it(`removes "is-active" class from menu`, async () => {
+        render(<Navbar />);
+
+        const hamburgerMenuButton = getHamburgerMenuButton();
+        const menu = getMenu();
+
+        await userEvent.click(hamburgerMenuButton);
+
+        expect(menu).toHaveClass("is-active");
+
+        await userEvent.click(getRandomMenuLink());
 
         expect(menu).not.toHaveClass("is-active");
     });

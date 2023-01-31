@@ -1,21 +1,22 @@
+/* eslint-disable testing-library/no-node-access */
 import "@testing-library/jest-dom";
 import "../../test-support/mocks/vanta-mocks";
 
 import { Box, Image } from "react-bulma-components";
 import React, { ReactElement } from "react";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 import ImageBoxRow from "../image-box-row";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 let text: string;
 let imageSrc: string;
-let box: ReactElement<Box>;
-let image: ReactElement<Image>;
+let box: ReactElement<typeof Box>;
+let image: ReactElement<typeof Image>;
 
 beforeAll(() => {
     text = faker.lorem.paragraph();
-    imageSrc = faker.image.imageUrl();
+    imageSrc = faker.image.url();
     box = <Box>{text}</Box>;
     image = <Image src={imageSrc} />;
 });
@@ -30,15 +31,9 @@ function expectBoxToExist(boxNode: ChildNode | null | undefined): void {
     expect(boxNode?.textContent).toBe(text);
 }
 
-function getColumnElement(): HTMLElement | null | undefined {
-    const figure = screen.getByRole("figure");
-
-    return figure.parentElement?.parentElement;
-}
-
 describe("when isImageOnLeft is true", () => {
     it("shows image on left", () => {
-        render(
+        const { container } = render(
             <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
@@ -46,14 +41,11 @@ describe("when isImageOnLeft is true", () => {
             />
         );
 
-        const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.firstChild?.firstChild;
-
-        expectFigureToExist(traverseDomToFigure);
+        expectFigureToExist(container?.firstChild?.firstChild?.firstChild);
     });
 
     it("shows box on right", () => {
-        render(
+        const { container } = render(
             <ImageBoxRow
                 isImageOnLeft={true}
                 box={box}
@@ -61,16 +53,13 @@ describe("when isImageOnLeft is true", () => {
             />
         );
 
-        const columnElement = getColumnElement();
-        const traverseDomToBox = columnElement?.children[1].firstChild;
-
-        expectBoxToExist(traverseDomToBox);
+        expectBoxToExist(container?.firstChild?.childNodes[1].firstChild);
     });
 });
 
 describe("when isImageOnLeft is false", () => {
     it("shows image on right", () => {
-        render(
+        const { container } = render(
             <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
@@ -78,14 +67,11 @@ describe("when isImageOnLeft is false", () => {
             />
         );
 
-        const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.children[1].firstChild;
-
-        expectFigureToExist(traverseDomToFigure);
+        expectFigureToExist(container?.firstChild?.childNodes[1].firstChild);
     });
 
     it("shows box on right", () => {
-        render(
+        const { container } = render(
             <ImageBoxRow
                 isImageOnLeft={false}
                 box={box}
@@ -93,9 +79,6 @@ describe("when isImageOnLeft is false", () => {
             />
         );
 
-        const columnElement = getColumnElement();
-        const traverseDomToBox = columnElement?.firstChild?.firstChild;
-
-        expectBoxToExist(traverseDomToBox);
+        expectBoxToExist(container?.firstChild?.firstChild?.firstChild);
     });
 });

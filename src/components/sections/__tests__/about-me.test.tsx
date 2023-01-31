@@ -5,7 +5,7 @@ import { render, screen } from "@testing-library/react";
 
 import AboutMe from "../about-me";
 import React from "react";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 jest.mock("../../../images/DrewCartoonNoBackground.png", () => "test.png");
 

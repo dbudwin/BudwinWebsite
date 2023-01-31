@@ -8,7 +8,7 @@ interface NavbarLinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
     offset?: number;
 }
 
-export default function NavbarLink({ to, offset, onClick, ...props }: NavbarLinkProps): ReactElement {
+export default function NavbarLink({ children, to, offset, onClick }: NavbarLinkProps): ReactElement {
     const scrollDurationMs = 800;
 
     return (
@@ -23,7 +23,7 @@ export default function NavbarLink({ to, offset, onClick, ...props }: NavbarLink
             offset={offset}
             role="menuLink"
         >
-            {props.children}
+            {children}
         </Link>
     );
 }
