@@ -1,11 +1,11 @@
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-const path = require("path");
-const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require("path")
+const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
     module: {
@@ -78,4 +78,4 @@ module.exports = {
         },
         modules: ["node_modules", "src/sass"],
     },
-};
+}
