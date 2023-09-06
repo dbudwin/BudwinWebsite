@@ -5,9 +5,11 @@ import ButtonLink from '../button-link'
 import DrewCartoonNoBackground from '../../images/DrewCartoonNoBackground.png'
 import ImageBoxRow from '../image-box-row'
 
+import { SiGithub, SiLinkedin, SiMedium, SiLinktree } from 'react-icons/si'
+
 interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
-  heading: string
-  subHeading: string
+  heading: string;
+  subHeading: string;
 }
 
 export default function AboutMe({
@@ -16,7 +18,7 @@ export default function AboutMe({
 }: AboutMeProps): ReactElement {
   return (
     <ImageBoxRow
-      image={<Image src={DrewCartoonNoBackground} alt='Drew Cartoon' />}
+      image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
       box={
         <Box>
           <Heading>{heading}</Heading>
@@ -38,19 +40,24 @@ export default function AboutMe({
           </Content>
           <Button.Group>
             <ButtonLink
-              text='My LinkedIn'
-              url='https://bit.ly/dbudwin-linkedin'
-              icon={['fab', 'linkedin']}
+              text="My LinkedIn"
+              url="https://bit.ly/dbudwin-linkedin"
+              icon={<SiLinkedin />}
             />
             <ButtonLink
-              text='My Medium Blog'
-              url='https://bit.ly/dbudwin-medium'
-              icon={['fab', 'medium']}
+              text="My Medium Blog"
+              url="https://bit.ly/dbudwin-medium"
+              icon={<SiMedium />}
             />
             <ButtonLink
-              text='My GitHub Résumé'
-              url='https://bit.ly/dbudwin-github-resume'
-              icon={['fab', 'github']}
+              text="My GitHub"
+              url="https://bit.ly/dbudwin-github"
+              icon={<SiGithub />}
+            />
+            <ButtonLink
+              text="My Linktree"
+              url="https://bit.ly/dbudwin-linktree"
+              icon={<SiLinktree />}
             />
           </Button.Group>
         </Box>

@@ -1,7 +1,8 @@
 import 'react-vertical-timeline-component/style.min.css'
 
-import { Heading, Section } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
+import { Heading, Section } from 'react-bulma-components'
+import { FaChalkboardTeacher, FaCode, FaFlask, FaGraduationCap } from 'react-icons/fa'
 
 import TimelineElement from '../timeline/timeline-element'
 import { VerticalTimeline } from 'react-vertical-timeline-component'
@@ -21,114 +22,139 @@ export default function HistoryTimeline({
       </Heading>
       <VerticalTimeline className='vertical-timeline-custom-line'>
         <TimelineElement
-          header='Senior Platform Engineer @ Voice'
-          subtitle='Remote (Brooklyn, NY Headquarters)'
+          header='Senior Software Engineer, Team Lead, Manager'
+          subtitle='Voice, Remote (Brooklyn, NY Headquarters)'
           date='2021-Present'
-          icon={['fas', 'code']}
+          icon={<FaCode />}
           tags={['TypeScript', 'GraphQL']}
         >
           <ul>
             <li>
-              Work with a multinational team on the creation aspect of NFTs,
-              like minting, editions, and co-creation.
+              Interfaced directly with engineers, DevOps, C-suite, project
+              managers, and designers to deliver features and fixes.
             </li>
             <li>
-              Helped transition from a social media platform to an NFT platform.
+              Managed multiple engineers and conducted routine one-on-ones,
+              S.M.A.R.T. goal setting, and performance reviews to bring out the
+              best in each engineer by tailoring specific metrics for each
+              engineer to improve upon.
             </li>
+            <li>
+              Helped an engineer identify and remove obstacles that cut their
+              cycle time in half while doubling their throughput and increasing
+              their code quality (stats via CodeClimate Velocity).
+            </li>
+            <li>
+              Served as technical lead on a team with 5 other engineers to
+              deliver our biggest feature of 2022 which was delivered on time.
+            </li>
+            <li>
+              Recruited and interviewed engineers during our organization&apos;s
+              growth phases.
+            </li>
+            <li>
+              Created a question-and-decision tree to make interviews consistent
+              across candidates.
+            </li>
+            <li>Trained team members how to be effective interviewers.</li>
           </ul>
         </TimelineElement>
         <TimelineElement
-          header='Software Engineer III @ FoxGuard Solutions'
-          subtitle='Christiansburg, VA'
+          header='Certificate of Specialization, Leadership & Management'
+          subtitle='Harvard Business School Online'
+          date='2022'
+          icon={<FaGraduationCap />}
+        >
+          Completed three courses: Leadership Principles, Management Essentials,
+          and Strategy Execution through Harvard Business School&apos;s online
+          program.
+        </TimelineElement>
+        <TimelineElement
+          header='Software Engineer III'
+          subtitle='FoxGuard Solutions, Christiansburg, VA'
           date='2015-2021'
-          icon={['fas', 'code']}
+          icon={<FaCode />}
           tags={['Python', 'React', 'TypeScript', 'Docker', 'C#', 'Qt']}
         >
           <ul>
             <li>
-              Spearheaded the design, architecture, and implementation of a
-              web-based tool to elegantly track, organize, and manage
-              customer&apos;s critical assets. Initiated monthly review sessions
-              with customers and stakeholders to ensure product development was
-              meeting expectations. (Python, Django, TypeScript, React, MySQL,
-              Docker)
+              Technical lead of the design, architecture, and implementation of
+              a web-based tool to elegantly track, organize, and manage
+              customer&apos;s critical assets. Initiated monthly review sessions with
+              customers and stakeholders to ensure product development was
+              meeting expectations.
             </li>
             <li>
-              Led development of a desktop application to help visualize patch
-              data trends. This tool provided deep insight into a
-              customer&apos;s patches to understand frequently vulnerable
-              systems and applications. (Python, Qt, TypeScript, MSSQL)
-            </li>
-            <li>
-              Developed desktop applications to track, manage and report patches
-              for critical IT and OT devices essential to national and
-              international power grids. (Python, C#, TypeScript, SQL Server)
-            </li>
-            <li>
-              Used DevOps tools: Docker, Chef, Ansible, Azure DevOps, and
-              Jenkins/JobDSL to migrate infrastructure to a
-              “configuration-as-code” model.
+              Technical lead of a desktop application to help visualize patch
+              data trends. This tool provided deep insight into a customer&apos;s
+              patches to understand frequently vulnerable systems and
+              applications.
             </li>
             <li>
               Championed industry best practices with regard to standups,
               sprints, software design, testing, interview processes, and
               employee onboarding.
             </li>
+            <li>
+              Mentored multiple junior employees by providing coaching on soft
+              and hard skills needed to be a successful engineer.
+            </li>
           </ul>
         </TimelineElement>
         <TimelineElement
-          header='Software Engineer @ Paymentus Corporation'
-          subtitle='Blacksburg, VA'
+          header='Software Engineer'
+          subtitle='Paymentus Corporation, Blacksburg, VA'
           date='2015'
-          icon={['fas', 'code']}
+          icon={<FaCode />}
           tags={['Java', 'Spring', 'Oracle']}
         >
           <ul>
             <li>
               Worked with a multinational team to develop new and existing
-              implementations for bill pay customers. (Java, Spring)
+              implementations for bill pay customers.
             </li>
             <li>
-              Assisted with managing a large Oracle database and implementations
-              for hundreds of customers.
+              Managed a large Oracle database and deployments for hundreds of
+              customers.
             </li>
           </ul>
         </TimelineElement>
         <TimelineElement
-          header='Software Engineer @ AVID LLC'
-          subtitle='Blacksburg, VA'
+          header='Software Engineer'
+          subtitle='AVID LLC, Blacksburg, VA'
           date='2010-2015'
-          icon={['fas', 'code']}
+          icon={<FaCode />}
           tags={['C++', 'Qt', 'Java']}
         >
           <ul>
             <li>
-              Lead developer for multiple phases of work with the Army Corp of
-              Engineers’ EASEE project. (Java)
+              Technical lead for 3 phases of work with the Army Corp of
+              Engineers&apos; EASEE project.
             </li>
             <li>
-              Lead developer on ground station software for AVID’s ducted fan
-              vehicle EDF-8. (C++, Qt)
+              Technical lead for ground station software for AVID&apos;s ducted fan
+              vehicle, EDF-8.
             </li>
             <li>
               Implemented agile software and continuous integration practices to
               greatly increase efficiency.
             </li>
             <li>
-              Software lead for APEX, a medium-fidelity analysis application
-              that predicts aircraft performance. (C++, Qt)
+              Technical lead for APEX, a medium-fidelity analysis application
+              that predicts aircraft performance.
             </li>
             <li>Represented AVID as an exhibitor at AUVSI in Orlando, FL.</li>
             <li>
-              Worked on multiple SBIR proposals and continuations of work.
+              Worked on multiple SBIR proposals and continuations of work to
+              increase company revenue by starting and continuing projects.
             </li>
           </ul>
         </TimelineElement>
         <TimelineElement
-          header='Researcher, Dept. of Computer Science'
-          subtitle='Blacksburg, VA'
+          header='Researcher'
+          subtitle='Virginia Tech Dept. of Computer Science, Blacksburg, VA'
           date='2009'
-          icon={['fas', 'flask']}
+          icon={<FaFlask />}
           tags={['C++']}
         >
           <ul>
@@ -143,10 +169,10 @@ export default function HistoryTimeline({
           </ul>
         </TimelineElement>
         <TimelineElement
-          header='Teaching Assistant, Dept. of Computer Science'
-          subtitle='Blacksburg, VA'
+          header='Teaching Assistant'
+          subtitle='Virginia Tech Dept. of Computer Science, Blacksburg, VA'
           date='2009'
-          icon={['fas', 'chalkboard-teacher']}
+          icon={<FaChalkboardTeacher />}
           tags={['Java']}
         >
           <ul>
@@ -167,9 +193,9 @@ export default function HistoryTimeline({
         </TimelineElement>
         <TimelineElement
           header='Computer Science Undergrad Student'
-          subtitle='Blacksburg, VA'
+          subtitle='Virginia Tech, Blacksburg, VA'
           date='2007-2011'
-          icon={['fas', 'graduation-cap']}
+          icon={<FaGraduationCap />}
         >
           Graduated with a bachelor&apos;s degree in Computer Science from
           Virginia Tech&apos;s College of Engineering with a minor in math. Some

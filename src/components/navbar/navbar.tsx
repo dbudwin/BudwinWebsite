@@ -1,10 +1,10 @@
 import React, { ReactElement, useState } from 'react'
 
 import { Navbar as BulmaNavbar } from 'react-bulma-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavbarLink from './navbar-link'
 import { animateScroll } from 'react-scroll'
 import { useOffset } from '../../hooks/useOffset'
+import { FaCode } from 'react-icons/fa'
 
 export default function Navbar(): ReactElement {
   const { offsetRef, offset } = useOffset()
@@ -23,7 +23,7 @@ export default function Navbar(): ReactElement {
           renderAs='a'
           onClick={(): void => animateScroll.scrollToTop()}
         >
-          <FontAwesomeIcon icon={['fas', 'code']} size='2x' />
+          <FaCode size={35}/>
         </BulmaNavbar.Item>
         <BulmaNavbar.Burger
           role='hamburgerButton'

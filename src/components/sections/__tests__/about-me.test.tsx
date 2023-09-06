@@ -53,11 +53,20 @@ it('shows Medium blog link', () => {
   expect(link).toHaveAttribute('href', 'https://bit.ly/dbudwin-medium')
 })
 
-it('shows GitHub résumé link', () => {
+it('shows GitHub link', () => {
   render(<AboutMe heading={heading} subHeading={subHeading} />)
 
-  const link = screen.getByRole('link', { 'name': 'My GitHub Résumé' })
+  const link = screen.getByRole('link', { 'name': 'My GitHub' })
 
   expect(link).toBeInTheDocument()
-  expect(link).toHaveAttribute('href', 'https://bit.ly/dbudwin-github-resume')
+  expect(link).toHaveAttribute('href', 'https://bit.ly/dbudwin-github')
+})
+
+it('shows Linktree link', () => {
+  render(<AboutMe heading={heading} subHeading={subHeading} />)
+
+  const link = screen.getByRole('link', { 'name': 'My Linktree' })
+
+  expect(link).toBeInTheDocument()
+  expect(link).toHaveAttribute('href', 'https://bit.ly/dbudwin-linktree')
 })

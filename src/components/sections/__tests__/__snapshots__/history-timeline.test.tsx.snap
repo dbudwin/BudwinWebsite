@@ -37,9 +37,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -56,12 +71,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Senior Platform Engineer @ Voice
+            Senior Software Engineer, Team Lead, Manager
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Remote (Brooklyn, NY Headquarters)
+            Voice, Remote (Brooklyn, NY Headquarters)
           </h1>
           <div
             className="content"
@@ -82,10 +97,25 @@ exports[`shows the history timeline 1`] = `
             </span>
             <ul>
               <li>
-                Work with a multinational team on the creation aspect of NFTs, like minting, editions, and co-creation.
+                Interfaced directly with engineers, DevOps, C-suite, project managers, and designers to deliver features and fixes.
               </li>
               <li>
-                Helped transition from a social media platform to an NFT platform.
+                Managed multiple engineers and conducted routine one-on-ones, S.M.A.R.T. goal setting, and performance reviews to bring out the best in each engineer by tailoring specific metrics for each engineer to improve upon.
+              </li>
+              <li>
+                Helped an engineer identify and remove obstacles that cut their cycle time in half while doubling their throughput and increasing their code quality (stats via CodeClimate Velocity).
+              </li>
+              <li>
+                Served as technical lead on a team with 5 other engineers to deliver our biggest feature of 2022 which was delivered on time.
+              </li>
+              <li>
+                Recruited and interviewed engineers during our organization's growth phases.
+              </li>
+              <li>
+                Created a question-and-decision tree to make interviews consistent across candidates.
+              </li>
+              <li>
+                Trained team members how to be effective interviewers.
               </li>
             </ul>
           </div>
@@ -107,9 +137,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -126,12 +171,76 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Software Engineer III @ FoxGuard Solutions
+            Certificate of Specialization, Leadership & Management
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Christiansburg, VA
+            Harvard Business School Online
+          </h1>
+          <div
+            className="content"
+          >
+            Completed three courses: Leadership Principles, Management Essentials, and Strategy Execution through Harvard Business School's online program.
+          </div>
+        </div>
+        <span
+          className="is-size-5 vertical-timeline-element-date"
+        >
+          2022
+        </span>
+      </div>
+    </div>
+    <div
+      className="vertical-timeline-element"
+      id=""
+      style={null}
+    >
+      <span
+        className="vertical-timeline-custom-icon vertical-timeline-element-icon is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          />
+        </svg>
+      </span>
+      <div
+        className="vertical-timeline-element-content is-hidden"
+        onClick={null}
+        style={null}
+      >
+        <div
+          className="vertical-timeline-element-content-arrow"
+          style={null}
+        />
+        <div
+          className="box"
+        >
+          <h1
+            className="title is-4"
+          >
+            Software Engineer III
+          </h1>
+          <h1
+            className="subtitle is-6"
+          >
+            FoxGuard Solutions, Christiansburg, VA
           </h1>
           <div
             className="content"
@@ -172,19 +281,16 @@ exports[`shows the history timeline 1`] = `
             </span>
             <ul>
               <li>
-                Spearheaded the design, architecture, and implementation of a web-based tool to elegantly track, organize, and manage customer's critical assets. Initiated monthly review sessions with customers and stakeholders to ensure product development was meeting expectations. (Python, Django, TypeScript, React, MySQL, Docker)
+                Technical lead of the design, architecture, and implementation of a web-based tool to elegantly track, organize, and manage customer's critical assets. Initiated monthly review sessions with customers and stakeholders to ensure product development was meeting expectations.
               </li>
               <li>
-                Led development of a desktop application to help visualize patch data trends. This tool provided deep insight into a customer's patches to understand frequently vulnerable systems and applications. (Python, Qt, TypeScript, MSSQL)
-              </li>
-              <li>
-                Developed desktop applications to track, manage and report patches for critical IT and OT devices essential to national and international power grids. (Python, C#, TypeScript, SQL Server)
-              </li>
-              <li>
-                Used DevOps tools: Docker, Chef, Ansible, Azure DevOps, and Jenkins/JobDSL to migrate infrastructure to a “configuration-as-code” model.
+                Technical lead of a desktop application to help visualize patch data trends. This tool provided deep insight into a customer's patches to understand frequently vulnerable systems and applications.
               </li>
               <li>
                 Championed industry best practices with regard to standups, sprints, software design, testing, interview processes, and employee onboarding.
+              </li>
+              <li>
+                Mentored multiple junior employees by providing coaching on soft and hard skills needed to be a successful engineer.
               </li>
             </ul>
           </div>
@@ -206,9 +312,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -225,12 +346,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Software Engineer @ Paymentus Corporation
+            Software Engineer
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Blacksburg, VA
+            Paymentus Corporation, Blacksburg, VA
           </h1>
           <div
             className="content"
@@ -256,10 +377,10 @@ exports[`shows the history timeline 1`] = `
             </span>
             <ul>
               <li>
-                Worked with a multinational team to develop new and existing implementations for bill pay customers. (Java, Spring)
+                Worked with a multinational team to develop new and existing implementations for bill pay customers.
               </li>
               <li>
-                Assisted with managing a large Oracle database and implementations for hundreds of customers.
+                Managed a large Oracle database and deployments for hundreds of customers.
               </li>
             </ul>
           </div>
@@ -281,9 +402,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -300,12 +436,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Software Engineer @ AVID LLC
+            Software Engineer
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Blacksburg, VA
+            AVID LLC, Blacksburg, VA
           </h1>
           <div
             className="content"
@@ -331,22 +467,22 @@ exports[`shows the history timeline 1`] = `
             </span>
             <ul>
               <li>
-                Lead developer for multiple phases of work with the Army Corp of Engineers’ EASEE project. (Java)
+                Technical lead for 3 phases of work with the Army Corp of Engineers' EASEE project.
               </li>
               <li>
-                Lead developer on ground station software for AVID’s ducted fan vehicle EDF-8. (C++, Qt)
+                Technical lead for ground station software for AVID's ducted fan vehicle, EDF-8.
               </li>
               <li>
                 Implemented agile software and continuous integration practices to greatly increase efficiency.
               </li>
               <li>
-                Software lead for APEX, a medium-fidelity analysis application that predicts aircraft performance. (C++, Qt)
+                Technical lead for APEX, a medium-fidelity analysis application that predicts aircraft performance.
               </li>
               <li>
                 Represented AVID as an exhibitor at AUVSI in Orlando, FL.
               </li>
               <li>
-                Worked on multiple SBIR proposals and continuations of work.
+                Worked on multiple SBIR proposals and continuations of work to increase company revenue by starting and continuing projects.
               </li>
             </ul>
           </div>
@@ -368,9 +504,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -387,12 +538,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Researcher, Dept. of Computer Science
+            Researcher
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Blacksburg, VA
+            Virginia Tech Dept. of Computer Science, Blacksburg, VA
           </h1>
           <div
             className="content"
@@ -433,9 +584,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -452,12 +618,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="title is-4"
           >
-            Teaching Assistant, Dept. of Computer Science
+            Teaching Assistant
           </h1>
           <h1
             className="subtitle is-6"
           >
-            Blacksburg, VA
+            Virginia Tech Dept. of Computer Science, Blacksburg, VA
           </h1>
           <div
             className="content"
@@ -504,9 +670,24 @@ exports[`shows the history timeline 1`] = `
         onClick={null}
         style={null}
       >
-        <i
-          className="fa"
-        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 640 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"
+          />
+        </svg>
       </span>
       <div
         className="vertical-timeline-element-content is-hidden"
@@ -528,12 +709,12 @@ exports[`shows the history timeline 1`] = `
           <h1
             className="subtitle is-6"
           >
-            Blacksburg, VA
+            Virginia Tech, Blacksburg, VA
           </h1>
           <div
             className="content"
           >
-            Graduated with a bachelor's degree in Computer Science from Virginia Tech's College of Engineering with a minor in math.  Some of my relevant coursework includes two semesters of algorithms, operating system design, two semesters of computer organization, internet software development, GUI programming, comparative programming languages, discrete mathematics, and four semesters calculus.
+            Graduated with a bachelor's degree in Computer Science from Virginia Tech's College of Engineering with a minor in math. Some of my relevant coursework includes two semesters of algorithms, operating system design, two semesters of computer organization, internet software development, GUI programming, comparative programming languages, discrete mathematics, and four semesters calculus.
           </div>
         </div>
         <span

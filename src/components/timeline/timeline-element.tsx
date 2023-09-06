@@ -3,15 +3,13 @@ import 'react-vertical-timeline-component/style.min.css'
 import { Box, Content, Heading, Tag } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 
 interface TimelineElementProps {
   header: string
   subtitle: string
   date: string
-  icon: IconProp
+  icon: JSX.Element
   tags?: string[]
   children: string | JSX.Element
 }
@@ -29,7 +27,7 @@ export default function TimelineElement({
       iconClassName='vertical-timeline-custom-icon'
       date={date}
       dateClassName={'is-size-5'}
-      icon={<FontAwesomeIcon icon={icon} size='lg' fixedWidth />}
+      icon={icon}
     >
       <Box>
         <Heading size={4}>{header}</Heading>
