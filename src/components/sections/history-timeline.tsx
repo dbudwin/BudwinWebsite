@@ -1,8 +1,8 @@
 import 'react-vertical-timeline-component/style.min.css'
 
-import React, { ReactElement } from 'react'
-import { Heading, Section } from 'react-bulma-components'
 import { FaChalkboardTeacher, FaCode, FaFlask, FaGraduationCap } from 'react-icons/fa'
+import { Heading, Section } from 'react-bulma-components'
+import React, { ReactElement } from 'react'
 
 import TimelineElement from '../timeline/timeline-element'
 import { VerticalTimeline } from 'react-vertical-timeline-component'
@@ -26,7 +26,7 @@ export default function HistoryTimeline({
           subtitle='Voice, Remote (Brooklyn, NY Headquarters)'
           date='2021-Present'
           icon={<FaCode />}
-          tags={['TypeScript', 'GraphQL']}
+          tags={['TypeScript', 'GraphQL', 'React']}
         >
           <ul>
             <li>

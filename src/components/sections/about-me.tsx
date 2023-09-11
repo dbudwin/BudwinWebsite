@@ -1,11 +1,11 @@
 import { Box, Button, Content, Heading, Image } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
+import { SiGithub, SiLinkedin, SiLinktree, SiMedium } from 'react-icons/si'
 
 import ButtonLink from '../button-link'
 import DrewCartoonNoBackground from '../../images/DrewCartoonNoBackground.png'
 import ImageBoxRow from '../image-box-row'
-
-import { SiGithub, SiLinkedin, SiMedium, SiLinktree } from 'react-icons/si'
+import Typewriter from 'typewriter-effect'
 
 interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
   heading: string;
@@ -16,6 +16,7 @@ export default function AboutMe({
   heading,
   subHeading,
 }: AboutMeProps): ReactElement {
+  console.log(subHeading)
   return (
     <ImageBoxRow
       image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
@@ -23,7 +24,14 @@ export default function AboutMe({
         <Box>
           <Heading>{heading}</Heading>
           <Heading subtitle size={5}>
-            {subHeading}
+            I'm a{' '}
+            <Typewriter
+              options={{
+                strings: ['software engineer.', 'tech lead.', 'manager.'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </Heading>
           <Content>
             You&apos;ve somehow stumbled onto this corner of the internet. Not a
@@ -32,7 +40,7 @@ export default function AboutMe({
             development software, like this page made using React & TypeScript.
             But since you&apos;re here, I figured I&apos;d put up some content
             to help spruce things up a little bit. By trade I&apos;m a software
-            engineer with over a decade of professional experience.
+            engineer with over {new Date().getFullYear() - 2011} years of professional experience.
           </Content>
           <Content>
             If you would like to contact me about job opportunities or
