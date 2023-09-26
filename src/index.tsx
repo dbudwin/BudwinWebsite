@@ -1,32 +1,15 @@
-import "./sass/index.scss";
+import './sass/index.scss'
 
-import {
-    faChalkboardTeacher,
-    faCode,
-    faFlask,
-    faGraduationCap
-} from "@fortawesome/free-solid-svg-icons";
-import {
-    faGithub,
-    faLinkedin,
-    faMedium,
-} from "@fortawesome/free-brands-svg-icons";
+import App from './app'
+import PageFooter from './components/page-footer'
+import React from 'react'
+import { createRoot } from 'react-dom/client'
 
-import App from "./app";
-import PageFooter from "./components/page-footer";
-import React from "react";
-import ReactDOM from "react-dom";
-import { library } from "@fortawesome/fontawesome-svg-core";
+const rootContainer = document.getElementById('root')
+const root = createRoot(rootContainer!)
 
-library.add(
-    faChalkboardTeacher,
-    faCode,
-    faFlask,
-    faGithub,
-    faGraduationCap,
-    faLinkedin,
-    faMedium,
-);
+const footerContainer = document.getElementById('footer')
+const footer = createRoot(footerContainer!)
 
-ReactDOM.render(<App />, document.getElementById("root"));
-ReactDOM.render(<PageFooter copyrightYear={new Date().getFullYear()} />, document.getElementById("footer"));
+root.render(<App />)
+footer.render(<PageFooter copyrightYear={new Date().getFullYear()} />)

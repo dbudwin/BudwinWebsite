@@ -1,18 +1,19 @@
-import "@testing-library/jest-dom";
-import "../test-support/mocks/vanta-mocks";
+import '../test-support/mocks/vanta-mocks'
 
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react'
 
-import App from "../app";
-import React from "react";
-import { mockAllIsIntersecting } from "react-intersection-observer/test-utils";
+import App from '../app'
+import React from 'react'
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 
-jest.mock("../images/DrewCartoonNoBackground.png", () => "test.png");
+jest.mock('../images/DrewCartoonNoBackground.png', () => 'test.png')
 
-it(`shows "about me" section`, () => {
-    render(<App />);
+it('renders all of the sections', () => {
+  render(<App />)
 
-    mockAllIsIntersecting(true);
+  mockAllIsIntersecting(true)
 
-    expect(screen.getByRole("heading", { "name": "Hi, I'm Drew!" })).toBeInTheDocument();
-});
+  expect(screen.getByRole('navigation')).toBeInTheDocument()
+  expect(screen.getByRole('heading', { 'name': 'Hi, I\'m Drew!' })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { 'name': 'Some History' })).toBeInTheDocument()
+})

@@ -1,61 +1,67 @@
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom'
 
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react'
+import useAxios, { UseAxios } from 'axios-hooks'
 
-import { AxiosError } from "axios";
-import DadJoke from "../dad-joke";
-import React from "react";
-import faker from "faker";
-import { mockFunction } from "../../test-support/jest-helpers";
-import useAxios from "axios-hooks";
+import { AxiosError } from 'axios'
+import DadJoke from '../dad-joke'
+import React from 'react'
+import { faker } from '@faker-js/faker'
 
-jest.mock("axios-hooks");
+jest.mock('axios-hooks')
 
-describe("when the API returned successfully", () => {
-    it("shows the dad joke", () => {
-        const joke = faker.lorem.sentence();
+const mockUseAxios = (useAxios as jest.MockedFunction<UseAxios>)
 
-        mockFunction(useAxios).mockReturnValue([
-            {
-                data: { "joke": joke },
-                loading: false,
-            },
-            jest.fn(),
-        ]);
+describe('when the API returned successfully', () => {
+  it('shows the dad joke', () => {
+    const joke = faker.lorem.sentence()
 
-        render(<DadJoke />);
+    mockUseAxios.mockReturnValue([
+      {
+        data: { 'joke': joke },
+        loading: false,
+        error: null,
+      },
+      jest.fn(),
+      jest.fn(),
+    ])
 
-        expect(screen.getByText(`${joke} 🤣`)).toBeInTheDocument();
-    });
-});
+    render(<DadJoke />)
 
-describe("when the API returned with an error", () => {
-    it("shows an error message", () => {
-        mockFunction(useAxios).mockReturnValue([
-            {
-                error: new Error() as AxiosError,
-                loading: false,
-            },
-            jest.fn(),
-        ]);
+    expect(screen.getByText(`${joke} 🤣`)).toBeInTheDocument()
+  })
+})
 
-        render(<DadJoke />);
+describe('when the API returned with an error', () => {
+  it('shows an error message', () => {
+    mockUseAxios.mockReturnValue([
+      {
+        error: new Error() as AxiosError,
+        loading: false,
+      },
+      jest.fn(),
+      jest.fn(),
+    ])
 
-        expect(screen.getByText("Error fetching dad joke!")).toBeInTheDocument();
-    });
-});
+    render(<DadJoke />)
 
-describe("when waiting for the API to respond", () => {
-    it("shows a loading message", () => {
-        mockFunction(useAxios).mockReturnValue([
-            {
-                loading: true,
-            },
-            jest.fn(),
-        ]);
+    expect(screen.getByText('Error fetching dad joke!')).toBeInTheDocument()
+  })
+})
 
-        render(<DadJoke />);
+describe('when waiting for the API to respond', () => {
+  it('shows a loading message', () => {
+    mockUseAxios.mockReturnValue([
+      {
+        loading: true,
+        error: null,
+      },
+      jest.fn(),
+      jest.fn(),
+    ])
 
-        expect(screen.getByText("Loading dad joke...")).toBeInTheDocument();
-    });
-});
+    render(<DadJoke />)
+
+    expect(screen.getByText('Loading dad joke...')).toBeInTheDocument()
+  })
+})

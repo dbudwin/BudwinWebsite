@@ -28,6 +28,7 @@ export default {
     // An array of regexp pattern strings used to skip coverage collection
     coveragePathIgnorePatterns: [
         "/node_modules/",
+        "/src/test-support/"
     ],
 
     // Indicates which provider should be used to instrument code for coverage
@@ -60,7 +61,7 @@ export default {
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
-    // globals: {},
+    globals: {},
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
@@ -84,7 +85,7 @@ export default {
     // moduleNameMapper: {},
 
     "moduleNameMapper": {
-        "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+        "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -106,16 +107,16 @@ export default {
     "reporters": ["default", "jest-junit"],
 
     // Automatically reset mock state between every test
-    // resetMocks: false,
+    resetMocks: false,
 
     // Reset the module registry before running each individual test
-    // resetModules: false,
+    resetModules: false,
 
     // A path to a custom resolver
     // resolver: undefined,
 
     // Automatically restore mock state between every test
-    // restoreMocks: false,
+    restoreMocks: false,
 
     // The root directory that Jest should scan for tests and modules within
     // rootDir: undefined,
@@ -195,4 +196,4 @@ export default {
 
     // Whether to use watchman for file crawling
     // watchman: true,
-};
+}

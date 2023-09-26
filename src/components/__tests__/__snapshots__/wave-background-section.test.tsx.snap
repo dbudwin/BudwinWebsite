@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders a wave background section 1`] = `
-<div>
+<div
+  id="voluptatum"
+>
   <section
     className="hero make-transparent is-fullheight-with-navbar"
   >

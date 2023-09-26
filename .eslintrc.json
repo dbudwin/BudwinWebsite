@@ -8,7 +8,6 @@
         "plugin:jest-dom/recommended",
         "plugin:react/recommended",
         "plugin:testing-library/react",
-        "plugin:testing-library/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,7 +15,8 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
+        "project": "./tsconfig.json",
         "sourceType": "module"
     },
     "plugins": [
@@ -33,26 +33,37 @@
         ],
         "quotes": [
             "error",
-            "double",
+            "single",
             {
                 "allowTemplateLiterals": true
             }
         ],
         "semi": [
             "error",
-            "always"
+            "never"
         ],
-        "comma-dangle": [
+        "comma-style": [
             "error",
-            "only-multiline"
+            "last",
+            {
+                "exceptions": {
+                    "CallExpression": false
+                }
+            }
         ],
         "@typescript-eslint/explicit-function-return-type": [
             "error"
         ],
         "@typescript-eslint/indent": [
             "error",
-            4
-        ]
+            2
+        ],
+        "@typescript-eslint/no-floating-promises": "error",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
+        "@typescript-eslint/promise-function-async": ["error"],
+        "require-await": "off",
+        "@typescript-eslint/require-await": "error"
     },
     "settings": {
         "react": {

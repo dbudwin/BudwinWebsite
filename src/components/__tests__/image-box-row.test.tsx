@@ -1,101 +1,84 @@
-import "@testing-library/jest-dom";
-import "../../test-support/mocks/vanta-mocks";
+/* eslint-disable testing-library/no-node-access */
+import '@testing-library/jest-dom'
+import '../../test-support/mocks/vanta-mocks'
 
-import { Box, Image } from "react-bulma-components";
-import React, { ReactElement } from "react";
-import { render, screen } from "@testing-library/react";
+import { Box, Image } from 'react-bulma-components'
+import React, { ReactElement } from 'react'
+import { render } from '@testing-library/react'
 
-import ImageBoxRow from "../image-box-row";
-import faker from "faker";
+import ImageBoxRow from '../image-box-row'
+import { faker } from '@faker-js/faker'
 
-let text: string;
-let imageSrc: string;
-let box: ReactElement<Box>;
-let image: ReactElement<Image>;
+let text: string
+let imageSrc: string
+let box: ReactElement<typeof Box>
+let image: ReactElement<typeof Image>
 
 beforeAll(() => {
-    text = faker.lorem.paragraph();
-    imageSrc = faker.image.imageUrl();
-    box = <Box>{text}</Box>;
-    image = <Image src={imageSrc} />;
-});
+  text = faker.lorem.paragraph()
+  imageSrc = faker.image.url()
+  box = <Box>{text}</Box>
+  image = <Image src={imageSrc} />
+})
 
 function expectFigureToExist(figureNode: ChildNode | null | undefined): void {
-    expect(figureNode).toHaveClass("image");
-    expect(figureNode?.firstChild).toHaveAttribute("src", imageSrc);
+  expect(figureNode).toHaveClass('image')
+  expect(figureNode?.firstChild).toHaveAttribute('src', imageSrc)
 }
 
 function expectBoxToExist(boxNode: ChildNode | null | undefined): void {
-    expect(boxNode).toHaveClass("box");
-    expect(boxNode?.textContent).toBe(text);
+  expect(boxNode).toHaveClass('box')
+  expect(boxNode?.textContent).toBe(text)
 }
 
-function getColumnElement(): HTMLElement | null | undefined {
-    const figure = screen.getByRole("figure");
+describe('when isImageOnLeft is true', () => {
+  it('shows image on left', () => {
+    const { container } = render(
+      <ImageBoxRow
+        isImageOnLeft={true}
+        box={box}
+        image={image}
+      />
+    )
 
-    return figure.parentElement?.parentElement;
-}
+    expectFigureToExist(container?.firstChild?.firstChild?.firstChild)
+  })
 
-describe("when isImageOnLeft is true", () => {
-    it("shows image on left", () => {
-        render(
-            <ImageBoxRow
-                isImageOnLeft={true}
-                box={box}
-                image={image}
-            />
-        );
+  it('shows box on right', () => {
+    const { container } = render(
+      <ImageBoxRow
+        isImageOnLeft={true}
+        box={box}
+        image={image}
+      />
+    )
 
-        const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.firstChild?.firstChild;
+    expectBoxToExist(container?.firstChild?.childNodes[1].firstChild)
+  })
+})
 
-        expectFigureToExist(traverseDomToFigure);
-    });
+describe('when isImageOnLeft is false', () => {
+  it('shows image on right', () => {
+    const { container } = render(
+      <ImageBoxRow
+        isImageOnLeft={false}
+        box={box}
+        image={image}
+      />
+    )
 
-    it("shows box on right", () => {
-        render(
-            <ImageBoxRow
-                isImageOnLeft={true}
-                box={box}
-                image={image}
-            />
-        );
+    expectFigureToExist(container?.firstChild?.childNodes[1].firstChild)
+  })
 
-        const columnElement = getColumnElement();
-        const traverseDomToBox = columnElement?.children[1].firstChild;
+  it('shows box on right', () => {
+    const { container } = render(
+      <ImageBoxRow
+        isImageOnLeft={false}
+        box={box}
+        image={image}
+      />
+    )
 
-        expectBoxToExist(traverseDomToBox);
-    });
-});
-
-describe("when isImageOnLeft is false", () => {
-    it("shows image on right", () => {
-        render(
-            <ImageBoxRow
-                isImageOnLeft={false}
-                box={box}
-                image={image}
-            />
-        );
-
-        const columnElement = getColumnElement();
-        const traverseDomToFigure = columnElement?.children[1].firstChild;
-
-        expectFigureToExist(traverseDomToFigure);
-    });
-
-    it("shows box on right", () => {
-        render(
-            <ImageBoxRow
-                isImageOnLeft={false}
-                box={box}
-                image={image}
-            />
-        );
-
-        const columnElement = getColumnElement();
-        const traverseDomToBox = columnElement?.firstChild?.firstChild;
-
-        expectBoxToExist(traverseDomToBox);
-    });
-});
+    expectBoxToExist(container?.firstChild?.firstChild?.firstChild)
+  })
+})

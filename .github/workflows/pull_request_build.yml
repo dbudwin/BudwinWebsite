@@ -16,13 +16,13 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "15"
-      - name: Install npm Dependencies
-        run: npm install
+          node-version: "16"
+      - name: Install yarn Dependencies
+        run: yarn install
       - name: Run Linting
-        run: npm run lint
+        run: yarn run lint
       - name: Run Tests
-        run: npm run ci-test
+        run: yarn run ci-test
       - name: Publish Coveralls
         uses: coverallsapp/github-action@master
         with:

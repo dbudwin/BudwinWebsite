@@ -1,7 +1,11 @@
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+
+const path = require("path")
+const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
     module: {
@@ -21,23 +25,24 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg)$/i,
-                use: [
-                    "file-loader",
-                    {
-                        loader: "image-webpack-loader",
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                            },
-                            pngquant: {
-                                quality: [0.65, 0.90],
-                                speed: 4,
-                            },
-                        }
-                    },
-                ],
+                type: "asset",
             }
         ]
+    },
+    optimization: {
+        minimizer: [
+            new ImageMinimizerPlugin({
+                minimizer: {
+                  implementation: ImageMinimizerPlugin.imageminMinify,
+                  options: {
+                    plugins: [
+                      ["optipng", { optimizationLevel: 5 }],
+                    ],
+                  },
+                },
+              }),
+            new UglifyJsPlugin(),
+        ],
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -54,6 +59,9 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin("./src/images/DrewCartoonNoBackground.png"),
         new MiniCssExtractPlugin(),
+        new webpack.DefinePlugin({
+            process: {env: {}}
+        })
     ],
     resolve: {
         extensions: [
@@ -65,6 +73,9 @@ module.exports = {
             ".ts",
             ".tsx",
         ],
+        fallback: {
+            util: require.resolve('util'),
+        },
         modules: ["node_modules", "src/sass"],
     },
-};
+}
