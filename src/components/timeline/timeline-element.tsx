@@ -38,7 +38,7 @@ export default function TimelineElement({
           {tags && (
             <Tag.Group>
               {tags.map((tag, index) => (
-                <Tag color='info' key={index}>
+                <Tag color='dark' key={index}>
                   {tag}
                 </Tag>
               ))}

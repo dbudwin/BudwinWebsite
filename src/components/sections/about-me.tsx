@@ -1,6 +1,7 @@
+/* eslint react/no-unescaped-entities: 0 */
 import { Box, Button, Content, Heading, Image } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
-import { SiGithub, SiLinkedin, SiLinktree, SiMedium } from 'react-icons/si'
+import { SiLinkedin, SiLinktree } from 'react-icons/si'
 
 import ButtonLink from '../button-link'
 import DrewCartoonNoBackground from '../../images/DrewCartoonNoBackground.png'
@@ -9,14 +10,11 @@ import Typewriter from 'typewriter-effect'
 
 interface AboutMeProps extends React.HTMLAttributes<HTMLDivElement> {
   heading: string;
-  subHeading: string;
 }
 
 export default function AboutMe({
   heading,
-  subHeading,
 }: AboutMeProps): ReactElement {
-  console.log(subHeading)
   return (
     <ImageBoxRow
       image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
@@ -27,7 +25,7 @@ export default function AboutMe({
             I'm a{' '}
             <Typewriter
               options={{
-                strings: ['software engineer.', 'tech lead.', 'manager.'],
+                strings: ['software engineer.', 'tech lead.', 'manager.', 'continuous learner.', 'team builder.'],
                 autoStart: true,
                 loop: true,
               }}
@@ -51,16 +49,6 @@ export default function AboutMe({
               text="My LinkedIn"
               url="https://bit.ly/dbudwin-linkedin"
               icon={<SiLinkedin />}
-            />
-            <ButtonLink
-              text="My Medium Blog"
-              url="https://bit.ly/dbudwin-medium"
-              icon={<SiMedium />}
-            />
-            <ButtonLink
-              text="My GitHub"
-              url="https://bit.ly/dbudwin-github"
-              icon={<SiGithub />}
             />
             <ButtonLink
               text="My Linktree"

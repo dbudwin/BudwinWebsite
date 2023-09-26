@@ -10,7 +10,7 @@ export default function App(): ReactElement {
     <React.Fragment>
       <Navbar />
       <WaveBackgroundSection id='aboutMe'>
-        <AboutMe heading='Hi, I&apos;m Drew!' subHeading='I&apos;m a professional software engineering leader based in Texas.' />
+        <AboutMe heading='Hi, I&apos;m Drew!' />
       </WaveBackgroundSection>
       <HistoryTimeline id='history' />
     </React.Fragment>

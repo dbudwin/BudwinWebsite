@@ -8,7 +8,7 @@ interface ButtonLinkProps {
   icon: JSX.Element
 }
 
-export default function AboutMe({ url, text, icon }: ButtonLinkProps): ReactElement {
+export default function ButtonLink({ url, text, icon }: ButtonLinkProps): ReactElement {
   return (
     <SecureLink href={url} className='button is-link is-info'>
       <span className='icon is-small'>

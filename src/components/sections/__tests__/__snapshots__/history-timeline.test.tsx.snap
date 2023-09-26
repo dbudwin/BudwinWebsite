@@ -85,14 +85,19 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 TypeScript
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 GraphQL
+              </span>
+              <span
+                className="tag is-dark"
+              >
+                React
               </span>
             </span>
             <ul>
@@ -249,32 +254,32 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Python
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 React
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 TypeScript
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Docker
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 C#
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Qt
               </span>
@@ -360,17 +365,17 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Java
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Spring
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Oracle
               </span>
@@ -450,17 +455,17 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 C++
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Qt
               </span>
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Java
               </span>
@@ -552,7 +557,7 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 C++
               </span>
@@ -632,7 +637,7 @@ exports[`shows the history timeline 1`] = `
               className="tags"
             >
               <span
-                className="tag is-info"
+                className="tag is-dark"
               >
                 Java
               </span>
