@@ -1,3 +1,4 @@
+const CopyPlugin = require("copy-webpack-plugin")
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
@@ -56,6 +57,14 @@ module.exports = {
                 charset: { charset: "utf-8" },
                 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
             },
+        }),
+        new CopyPlugin({
+            patterns: [
+              {
+                from: "src/static/404.html",
+                to: "404.html",
+              },
+            ],
         }),
         new FaviconsWebpackPlugin("./src/images/DrewCartoonNoBackground.png"),
         new MiniCssExtractPlugin(),
