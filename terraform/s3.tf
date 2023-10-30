@@ -145,9 +145,44 @@ module "template_files" {
 resource aws_s3_object assets {
   for_each = module.template_files.files
 
+  bucket        = aws_s3_bucket.root_bucket.id
+  key           = each.key
+  content_type  = each.value.content_type
+  source        = each.value.source_path
+  etag          = each.value.digests.md5
+  cache_control = "public, max-age=604800"
+}
+
+###########################################
+# Configure S3 buckets for logging
+###########################################
+resource "aws_s3_bucket" "logs_bucket" {
+  bucket = "logs.${var.bucket_name}"
+}
+
+resource "aws_s3_bucket_ownership_controls" "logs_bucket" {
+  bucket = aws_s3_bucket.logs_bucket.id
+
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
+}
+
+resource aws_s3_object logs {
+  bucket       = aws_s3_bucket.logs_bucket.id
+  key          = "logs/"
+  content_type = "application/x-directory"
+}
+
+resource aws_s3_object cdn {
+  bucket       = aws_s3_bucket.logs_bucket.id
+  key          = "cdn/"
+  content_type = "application/x-directory"
+}
+
+resource "aws_s3_bucket_logging" "root_bucket" {
   bucket = aws_s3_bucket.root_bucket.id
-  key    = each.key
-  content_type = each.value.content_type
-  source  = each.value.source_path
-  etag    = each.value.digests.md5
+
+  target_bucket = aws_s3_bucket.logs_bucket.id
+  target_prefix = aws_s3_object.logs.key
 }
