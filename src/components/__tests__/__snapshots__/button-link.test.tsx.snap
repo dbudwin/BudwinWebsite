@@ -2,6 +2,7 @@
 
 exports[`creates a button link that will open a new tab securely 1`] = `
 <a
+  aria-label="My Website"
   className="button is-link is-info"
   href="http://www.budw.in/"
   rel="noopener noreferrer"

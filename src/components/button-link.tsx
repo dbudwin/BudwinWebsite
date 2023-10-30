@@ -10,7 +10,7 @@ interface ButtonLinkProps {
 
 export default function ButtonLink({ url, text, icon: Icon }: ButtonLinkProps): ReactElement {
   return (
-    <SecureLink href={url} className='button is-link is-info'>
+    <SecureLink href={url} className='button is-link is-info' aria-label={text}>
       <span className='icon is-small'>
         <Icon />
       </span>

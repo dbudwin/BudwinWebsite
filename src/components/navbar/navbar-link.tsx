@@ -6,12 +6,14 @@ interface NavbarLinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
   to: string
   onClick: () => void
   offset?: number
+  ariaLabel:string
 }
 
 export default function NavbarLink({
   children,
   to,
   offset,
+  ariaLabel,
   onClick,
 }: NavbarLinkProps): ReactElement {
   const scrollDurationMs = 800
@@ -26,7 +28,8 @@ export default function NavbarLink({
       smooth={true}
       duration={scrollDurationMs}
       offset={offset}
-      role='menuLink'
+      role='menuitem'
+      aria-label={ariaLabel}
     >
       {children}
     </Link>
