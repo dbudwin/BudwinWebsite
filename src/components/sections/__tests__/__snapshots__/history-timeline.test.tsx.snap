@@ -3,6 +3,7 @@
 exports[`shows the history timeline 1`] = `
 <section
   className="section"
+  id="history"
 >
   <h2
     className="title"

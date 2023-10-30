@@ -4,7 +4,7 @@ import React from 'react'
 import { animateScroll } from 'react-scroll'
 import renderer from 'react-test-renderer'
 import userEvent from '@testing-library/user-event'
-import { SectionIds } from '../../../app'
+import { SectionId } from '../../../app'
 
 it('creates the navbar', () => {
   const navbar = renderer.create(<Navbar />).toJSON()
@@ -72,7 +72,7 @@ describe('when clicking menu link in open hamburger menu', () => {
     render(
       <React.Fragment>
         <Navbar />
-        {Object.values(SectionIds).map((s) => (<section id={s} key={s} />))}
+        {Object.values(SectionId).map((s) => (<section id={s} key={s} />))}
       </React.Fragment>
     )
   }

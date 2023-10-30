@@ -5,6 +5,7 @@ import NavbarLink from './navbar-link'
 import { animateScroll } from 'react-scroll'
 import { useOffset } from '../../hooks/useOffset'
 import { FaCode } from 'react-icons/fa'
+import { SectionId } from '../../app'
 
 export default function Navbar(): ReactElement {
   const { offsetRef, offset } = useOffset()
@@ -38,10 +39,10 @@ export default function Navbar(): ReactElement {
         className={`${isActive ? 'is-active' : ''}`}
       >
         <BulmaNavbar.Container>
-          <NavbarLink onClick={closeMenu} offset={offset} to='aboutMe' ariaLabel='About Me'>
+          <NavbarLink onClick={closeMenu} offset={offset} to={SectionId.ABOUT_ME} ariaLabel='About Me'>
             About Me
           </NavbarLink>
-          <NavbarLink onClick={closeMenu} offset={offset} to='history' ariaLabel='History'>
+          <NavbarLink onClick={closeMenu} offset={offset} to={SectionId.HISTORY} ariaLabel='History'>
             History
           </NavbarLink>
         </BulmaNavbar.Container>
