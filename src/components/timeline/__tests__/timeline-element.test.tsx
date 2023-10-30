@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import React from 'react'
 import { FaCode } from 'react-icons/fa'
 import TimelineElement from '../timeline-element'

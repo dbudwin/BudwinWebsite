@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import React from 'react'
 import WaveBackgroundSection from '../wave-background-section'
 import renderer from 'react-test-renderer'

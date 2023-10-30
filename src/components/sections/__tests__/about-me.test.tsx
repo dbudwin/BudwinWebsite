@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom'
 import '../../../test-support/mocks/vanta-mocks'
 
 import { render, screen } from '@testing-library/react'

@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import ButtonLink from '../button-link'
 import React from 'react'
 import renderer from 'react-test-renderer'

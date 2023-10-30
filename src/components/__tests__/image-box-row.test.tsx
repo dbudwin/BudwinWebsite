@@ -1,5 +1,4 @@
 /* eslint-disable testing-library/no-node-access */
-import '@testing-library/jest-dom'
 import '../../test-support/mocks/vanta-mocks'
 
 import { Box, Image } from 'react-bulma-components'

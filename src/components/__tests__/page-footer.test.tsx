@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import PageFooter from '../page-footer'
 import React from 'react'
 import renderer from 'react-test-renderer'
