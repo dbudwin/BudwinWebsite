@@ -10,7 +10,7 @@ it('renders a single element in the timeline', () => {
         header='Foo'
         subtitle='Bar'
         date='2020'
-        icon={<FaCode />}
+        icon={FaCode}
       >
         Hello World
       </TimelineElement>

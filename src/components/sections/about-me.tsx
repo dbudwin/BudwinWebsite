@@ -46,14 +46,14 @@ export default function AboutMe({
           </Content>
           <Button.Group>
             <ButtonLink
-              text="My LinkedIn"
-              url="https://bit.ly/dbudwin-linkedin"
-              icon={<SiLinkedin />}
+              text='My LinkedIn'
+              url='https://bit.ly/dbudwin-linkedin'
+              icon={SiLinkedin}
             />
             <ButtonLink
-              text="My Linktree"
-              url="https://bit.ly/dbudwin-linktree"
-              icon={<SiLinktree />}
+              text='My Linktree'
+              url='https://bit.ly/dbudwin-linktree'
+              icon={SiLinktree}
             />
           </Button.Group>
         </Box>

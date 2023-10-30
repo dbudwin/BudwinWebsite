@@ -4,12 +4,13 @@ import { Box, Content, Heading, Tag } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
 
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
+import { IconType } from 'react-icons'
 
 interface TimelineElementProps {
   header: string
   subtitle: string
   date: string
-  icon: JSX.Element
+  icon: IconType
   tags?: string[]
   children: string | JSX.Element
 }
@@ -18,7 +19,7 @@ export default function TimelineElement({
   header,
   subtitle,
   date,
-  icon,
+  icon: Icon,
   tags,
   children,
 }: TimelineElementProps): ReactElement {
@@ -27,7 +28,7 @@ export default function TimelineElement({
       iconClassName='vertical-timeline-custom-icon'
       date={date}
       dateClassName={'is-size-5'}
-      icon={icon}
+      icon={<Icon />}
     >
       <Box>
         <Heading size={4}>{header}</Heading>

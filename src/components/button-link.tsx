@@ -1,18 +1,18 @@
 import React, { ReactElement } from 'react'
-
+import { IconType } from 'react-icons'
 import { SecureLink } from 'react-secure-link'
 
 interface ButtonLinkProps {
   url: string
   text: string
-  icon: JSX.Element
+  icon: IconType // See: https://github.com/react-icons/react-icons/issues/577#issuecomment-1180323299
 }
 
-export default function ButtonLink({ url, text, icon }: ButtonLinkProps): ReactElement {
+export default function ButtonLink({ url, text, icon: Icon }: ButtonLinkProps): ReactElement {
   return (
     <SecureLink href={url} className='button is-link is-info'>
       <span className='icon is-small'>
-        {icon}
+        <Icon />
       </span>
       <span>{text}</span>
     </SecureLink>
