@@ -6,8 +6,6 @@ import AboutMe from '../about-me'
 import React from 'react'
 import { faker } from '@faker-js/faker'
 
-jest.mock('../../../images/DrewCartoonNoBackground.png', () => 'test.png')
-
 let heading: string
 
 beforeAll(() => {

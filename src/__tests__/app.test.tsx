@@ -6,8 +6,6 @@ import App from '../app'
 import React from 'react'
 import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 
-jest.mock('../images/DrewCartoonNoBackground.png', () => 'test.png')
-
 it('renders all of the sections', () => {
   render(<App />)
 
