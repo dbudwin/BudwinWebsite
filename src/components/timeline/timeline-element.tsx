@@ -31,8 +31,8 @@ export default function TimelineElement({
       icon={<Icon />}
     >
       <Box>
-        <Heading size={4}>{header}</Heading>
-        <Heading subtitle size={6}>
+        <Heading size={4} renderAs='h3'>{header}</Heading>
+        <Heading subtitle size={6} renderAs='h5'>
           {subtitle}
         </Heading>
         <Content>

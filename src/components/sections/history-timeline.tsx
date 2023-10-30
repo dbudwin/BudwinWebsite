@@ -16,8 +16,8 @@ export default function HistoryTimeline({
 }: HistoryTimelineProps): ReactElement {
   return (
     <Section id={id}>
-      <Heading style={{ textAlign: 'center' }}>Some History</Heading>
-      <Heading subtitle size={5} style={{ textAlign: 'center' }}>
+      <Heading renderAs="h2" style={{ textAlign: 'center' }}>Some History</Heading>
+      <Heading subtitle renderAs="h3" style={{ textAlign: 'center' }}>
         A brief timeline of my relevant experience.
       </Heading>
       <VerticalTimeline className='vertical-timeline-custom-line'>

@@ -21,7 +21,7 @@ export default function AboutMe({
       box={
         <Box>
           <Heading>{heading}</Heading>
-          <Heading subtitle size={5}>
+          <Heading subtitle renderAs='h2'>
             I'm a{' '}
             <Typewriter
               options={{
