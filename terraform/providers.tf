@@ -20,7 +20,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project = "BudwinWebsite"
+      BudwinWebsite = "Prod"
     }
   }
 }

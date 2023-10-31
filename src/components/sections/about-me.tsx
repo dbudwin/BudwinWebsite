@@ -1,10 +1,10 @@
 /* eslint react/no-unescaped-entities: 0 */
-import { Box, Button, Content, Heading, Image } from 'react-bulma-components'
+import { Box, Button, Content, Heading } from 'react-bulma-components'
 import React, { ReactElement } from 'react'
 import { SiLinkedin, SiLinktree } from 'react-icons/si'
 
 import ButtonLink from '../button-link'
-import DrewCartoonNoBackground from '../../images/DrewCartoonNoBackground.png'
+import DrewCartoonNoBackground from '../../images/DrewCartoonNoBackground.webp'
 import ImageBoxRow from '../image-box-row'
 import Typewriter from 'typewriter-effect'
 
@@ -17,11 +17,11 @@ export default function AboutMe({
 }: AboutMeProps): ReactElement {
   return (
     <ImageBoxRow
-      image={<Image src={DrewCartoonNoBackground} alt="Drew Cartoon" />}
+      image={<figure className='image is-fullwidth'><img src={DrewCartoonNoBackground} width='361' height='330' alt='Drew Cartoon' /></figure>}
       box={
         <Box>
           <Heading>{heading}</Heading>
-          <Heading subtitle size={5}>
+          <Heading subtitle renderAs='h2'>
             I'm a{' '}
             <Typewriter
               options={{
@@ -46,14 +46,14 @@ export default function AboutMe({
           </Content>
           <Button.Group>
             <ButtonLink
-              text="My LinkedIn"
-              url="https://bit.ly/dbudwin-linkedin"
-              icon={<SiLinkedin />}
+              text='My LinkedIn'
+              url='https://bit.ly/dbudwin-linkedin'
+              icon={SiLinkedin}
             />
             <ButtonLink
-              text="My Linktree"
-              url="https://bit.ly/dbudwin-linktree"
-              icon={<SiLinktree />}
+              text='My Linktree'
+              url='https://bit.ly/dbudwin-linktree'
+              icon={SiLinktree}
             />
           </Button.Group>
         </Box>

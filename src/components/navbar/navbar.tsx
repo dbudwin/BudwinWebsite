@@ -5,6 +5,7 @@ import NavbarLink from './navbar-link'
 import { animateScroll } from 'react-scroll'
 import { useOffset } from '../../hooks/useOffset'
 import { FaCode } from 'react-icons/fa'
+import { SectionId } from '../../app'
 
 export default function Navbar(): ReactElement {
   const { offsetRef, offset } = useOffset()
@@ -16,17 +17,19 @@ export default function Navbar(): ReactElement {
   }
 
   return (
-    <BulmaNavbar fixed={'top'} domRef={offsetRef}>
+    // TODO: Improve the type casting for the ref, casting to unknown is not ideal
+    <BulmaNavbar fixed={'top'} domRef={offsetRef as unknown as React.RefObject<'nav'>}>
       <BulmaNavbar.Brand>
         <BulmaNavbar.Item
-          role='home'
           renderAs='a'
           onClick={(): void => animateScroll.scrollToTop()}
+          role='link'
+          aria-label='Home'
         >
           <FaCode size={35}/>
         </BulmaNavbar.Item>
         <BulmaNavbar.Burger
-          role='hamburgerButton'
+          aria-label={`${isActive ? 'Close menu' : 'Open menu'}`}
           onClick={(): void => setIsActive(!isActive)}
           className={`${isActive ? 'is-active' : ''}`}
         />
@@ -36,10 +39,10 @@ export default function Navbar(): ReactElement {
         className={`${isActive ? 'is-active' : ''}`}
       >
         <BulmaNavbar.Container>
-          <NavbarLink onClick={closeMenu} to='aboutMe' offset={offset}>
+          <NavbarLink onClick={closeMenu} offset={offset} to={SectionId.ABOUT_ME} ariaLabel='About Me'>
             About Me
           </NavbarLink>
-          <NavbarLink onClick={closeMenu} to='history' offset={offset}>
+          <NavbarLink onClick={closeMenu} offset={offset} to={SectionId.HISTORY} ariaLabel='History'>
             History
           </NavbarLink>
         </BulmaNavbar.Container>

@@ -6,14 +6,12 @@ import App from '../app'
 import React from 'react'
 import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 
-jest.mock('../images/DrewCartoonNoBackground.png', () => 'test.png')
-
-it('renders all of the sections', () => {
+it('renders all of the sections', async () => {
   render(<App />)
 
   mockAllIsIntersecting(true)
 
-  expect(screen.getByRole('navigation')).toBeInTheDocument()
-  expect(screen.getByRole('heading', { 'name': 'Hi, I\'m Drew!' })).toBeInTheDocument()
-  expect(screen.getByRole('heading', { 'name': 'Some History' })).toBeInTheDocument()
+  await screen.findByRole('navigation')
+  await screen.findByRole('heading', { 'name': `Hi, I'm Drew!` })
+  await screen.findByRole('heading', { 'name': 'Some History' })
 })

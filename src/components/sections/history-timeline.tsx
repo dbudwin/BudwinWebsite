@@ -16,8 +16,8 @@ export default function HistoryTimeline({
 }: HistoryTimelineProps): ReactElement {
   return (
     <Section id={id}>
-      <Heading style={{ textAlign: 'center' }}>Some History</Heading>
-      <Heading subtitle size={5} style={{ textAlign: 'center' }}>
+      <Heading renderAs="h2" style={{ textAlign: 'center' }}>Some History</Heading>
+      <Heading subtitle renderAs="h3" style={{ textAlign: 'center' }}>
         A brief timeline of my relevant experience.
       </Heading>
       <VerticalTimeline className='vertical-timeline-custom-line'>
@@ -25,7 +25,7 @@ export default function HistoryTimeline({
           header='Senior Software Engineer, Team Lead, Manager'
           subtitle='Voice, Remote (Brooklyn, NY Headquarters)'
           date='2021-Present'
-          icon={<FaCode />}
+          icon={FaCode}
           tags={['TypeScript', 'GraphQL', 'React']}
         >
           <ul>
@@ -63,7 +63,7 @@ export default function HistoryTimeline({
           header='Certificate of Specialization, Leadership & Management'
           subtitle='Harvard Business School Online'
           date='2022'
-          icon={<FaGraduationCap />}
+          icon={FaGraduationCap}
         >
           Completed three courses: Leadership Principles, Management Essentials,
           and Strategy Execution through Harvard Business School&apos;s online
@@ -73,7 +73,7 @@ export default function HistoryTimeline({
           header='Software Engineer III'
           subtitle='FoxGuard Solutions, Christiansburg, VA'
           date='2015-2021'
-          icon={<FaCode />}
+          icon={FaCode}
           tags={['Python', 'React', 'TypeScript', 'Docker', 'C#', 'Qt']}
         >
           <ul>
@@ -105,7 +105,7 @@ export default function HistoryTimeline({
           header='Software Engineer'
           subtitle='Paymentus Corporation, Blacksburg, VA'
           date='2015'
-          icon={<FaCode />}
+          icon={FaCode}
           tags={['Java', 'Spring', 'Oracle']}
         >
           <ul>
@@ -123,7 +123,7 @@ export default function HistoryTimeline({
           header='Software Engineer'
           subtitle='AVID LLC, Blacksburg, VA'
           date='2010-2015'
-          icon={<FaCode />}
+          icon={FaCode}
           tags={['C++', 'Qt', 'Java']}
         >
           <ul>
@@ -154,7 +154,7 @@ export default function HistoryTimeline({
           header='Researcher'
           subtitle='Virginia Tech Dept. of Computer Science, Blacksburg, VA'
           date='2009'
-          icon={<FaFlask />}
+          icon={FaFlask}
           tags={['C++']}
         >
           <ul>
@@ -172,7 +172,7 @@ export default function HistoryTimeline({
           header='Teaching Assistant'
           subtitle='Virginia Tech Dept. of Computer Science, Blacksburg, VA'
           date='2009'
-          icon={<FaChalkboardTeacher />}
+          icon={FaChalkboardTeacher}
           tags={['Java']}
         >
           <ul>
@@ -195,7 +195,7 @@ export default function HistoryTimeline({
           header='Computer Science Undergrad Student'
           subtitle='Virginia Tech, Blacksburg, VA'
           date='2007-2011'
-          icon={<FaGraduationCap />}
+          icon={FaGraduationCap}
         >
           Graduated with a bachelor&apos;s degree in Computer Science from
           Virginia Tech&apos;s College of Engineering with a minor in math. Some

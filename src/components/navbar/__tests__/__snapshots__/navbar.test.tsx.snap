@@ -9,9 +9,10 @@ exports[`creates the navbar 1`] = `
     className="navbar-brand"
   >
     <a
+      aria-label="Home"
       className="navbar-item"
       onClick={[Function]}
-      role="home"
+      role="link"
     >
       <svg
         fill="currentColor"
@@ -33,9 +34,10 @@ exports[`creates the navbar 1`] = `
       </svg>
     </a>
     <div
+      aria-label="Open menu"
       className="navbar-burger"
       onClick={[Function]}
-      role="hamburgerButton"
+      role="button"
       style={
         {
           "outline": "none",
@@ -56,17 +58,19 @@ exports[`creates the navbar 1`] = `
       className="navbar-start"
     >
       <a
+        aria-label="About Me"
         className="navbar-item"
         onClick={[Function]}
-        role="menuLink"
+        role="menuitem"
         style={{}}
       >
         About Me
       </a>
       <a
+        aria-label="History"
         className="navbar-item"
         onClick={[Function]}
-        role="menuLink"
+        role="menuitem"
         style={{}}
       >
         History

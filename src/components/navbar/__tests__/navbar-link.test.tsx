@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import { render, screen } from '@testing-library/react'
 
 import NavbarLink from '../navbar-link'
@@ -9,7 +7,7 @@ import renderer from 'react-test-renderer'
 import userEvent from '@testing-library/user-event'
 
 it('creates a link for the navbar', () => {
-  const navbarLink = renderer.create(<NavbarLink to='section' onClick={jest.fn()} offset={faker.number.int()} />).toJSON()
+  const navbarLink = renderer.create(<NavbarLink to='section' ariaLabel={'label'} onClick={jest.fn()} offset={faker.number.int()} />).toJSON()
 
   expect(navbarLink).toMatchSnapshot()
 })
@@ -21,7 +19,7 @@ it('calls the onClick callback when link is clicked', async () => {
 
   render(
     <React.Fragment>
-      <NavbarLink to={section} onClick={mockOnClickCallback}>{linkText}</NavbarLink>
+      <NavbarLink to={section} ariaLabel={faker.lorem.word()} onClick={mockOnClickCallback}>{linkText}</NavbarLink>
       <div id={section} />
     </React.Fragment>
   )

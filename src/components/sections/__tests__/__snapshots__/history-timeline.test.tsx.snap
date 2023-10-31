@@ -3,8 +3,9 @@
 exports[`shows the history timeline 1`] = `
 <section
   className="section"
+  id="history"
 >
-  <h1
+  <h2
     className="title"
     style={
       {
@@ -13,9 +14,9 @@ exports[`shows the history timeline 1`] = `
     }
   >
     Some History
-  </h1>
-  <h1
-    className="subtitle is-5"
+  </h2>
+  <h3
+    className="subtitle"
     style={
       {
         "textAlign": "center",
@@ -23,7 +24,7 @@ exports[`shows the history timeline 1`] = `
     }
   >
     A brief timeline of my relevant experience.
-  </h1>
+  </h3>
   <div
     className="vertical-timeline-custom-line vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
   >
@@ -68,16 +69,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Senior Software Engineer, Team Lead, Manager
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Voice, Remote (Brooklyn, NY Headquarters)
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -173,16 +174,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Certificate of Specialization, Leadership & Management
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Harvard Business School Online
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -237,16 +238,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Software Engineer III
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             FoxGuard Solutions, Christiansburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -348,16 +349,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Software Engineer
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Paymentus Corporation, Blacksburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -438,16 +439,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Software Engineer
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             AVID LLC, Blacksburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -540,16 +541,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Researcher
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Virginia Tech Dept. of Computer Science, Blacksburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -620,16 +621,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Teaching Assistant
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Virginia Tech Dept. of Computer Science, Blacksburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >
@@ -706,16 +707,16 @@ exports[`shows the history timeline 1`] = `
         <div
           className="box"
         >
-          <h1
+          <h3
             className="title is-4"
           >
             Computer Science Undergrad Student
-          </h1>
-          <h1
+          </h3>
+          <h5
             className="subtitle is-6"
           >
             Virginia Tech, Blacksburg, VA
-          </h1>
+          </h5>
           <div
             className="content"
           >

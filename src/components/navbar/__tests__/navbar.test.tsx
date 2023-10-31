@@ -1,12 +1,10 @@
-import '@testing-library/jest-dom'
-
 import { render, screen } from '@testing-library/react'
-
 import Navbar from '../navbar'
 import React from 'react'
 import { animateScroll } from 'react-scroll'
 import renderer from 'react-test-renderer'
 import userEvent from '@testing-library/user-event'
+import { SectionId } from '../../../app'
 
 it('creates the navbar', () => {
   const navbar = renderer.create(<Navbar />).toJSON()
@@ -21,7 +19,7 @@ it('calls function to scroll to top when the home link is clicked', async () => 
 
   render(<Navbar />)
 
-  const homeLink = screen.getByRole('home')
+  const homeLink = screen.getAllByRole('link')[0]
 
   await userEvent.click(homeLink)
 
@@ -29,7 +27,7 @@ it('calls function to scroll to top when the home link is clicked', async () => 
 })
 
 function getHamburgerMenuButton(): HTMLElement {
-  return screen.getByRole('hamburgerButton')
+  return screen.getByRole('button')
 }
 
 function getMenu(): HTMLElement {
@@ -65,13 +63,22 @@ describe('when clicking the hamburger menu button', () => {
 
 describe('when clicking menu link in open hamburger menu', () => {
   function getRandomMenuLink(): HTMLElement {
-    const menuLinks = screen.getAllByRole('menuLink')
+    const menuLinks = screen.getAllByRole('menuitem')
 
     return menuLinks[Math.floor(Math.random() * menuLinks.length)]
   }
 
+  function renderNavbarWithSectionsToScrollTo(): void {
+    render(
+      <React.Fragment>
+        <Navbar />
+        {Object.values(SectionId).map((s) => (<section id={s} key={s} />))}
+      </React.Fragment>
+    )
+  }
+
   it(`removes "is-active" class from hamburger menu button`, async () => {
-    render(<Navbar />)
+    renderNavbarWithSectionsToScrollTo()
 
     const hamburgerMenuButton = getHamburgerMenuButton()
     const menu = getMenu()
@@ -86,7 +93,7 @@ describe('when clicking menu link in open hamburger menu', () => {
   })
 
   it(`removes "is-active" class from menu`, async () => {
-    render(<Navbar />)
+    renderNavbarWithSectionsToScrollTo()
 
     const hamburgerMenuButton = getHamburgerMenuButton()
     const menu = getMenu()

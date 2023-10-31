@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "module": "commonjs",
+        "module": "esnext",
         "outDir": "dist",
         "jsx": "react",
         "moduleResolution": "node",
@@ -18,6 +18,8 @@
         "esModuleInterop": true
     },
     "include": [
+        "jestSetup.ts",
+        "webpack.config.ts",
         "src"
-    ]
+    ],
 }

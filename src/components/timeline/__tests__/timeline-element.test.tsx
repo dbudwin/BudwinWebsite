@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom'
-
 import React from 'react'
 import { FaCode } from 'react-icons/fa'
 import TimelineElement from '../timeline-element'
@@ -12,7 +10,7 @@ it('renders a single element in the timeline', () => {
         header='Foo'
         subtitle='Bar'
         date='2020'
-        icon={<FaCode />}
+        icon={FaCode}
       >
         Hello World
       </TimelineElement>
